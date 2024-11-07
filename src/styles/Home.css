@@ -1,0 +1,858 @@
+/* @keyframes slideInFromTop{
+    0%{
+        transform: translateY(-100vw);
+    }
+
+    25%{
+
+    }
+
+
+
+    50%{
+        transform: translateY(0);
+    }
+}
+
+.contentLeft{
+    width: 50%;
+}
+
+.anim{
+    position: absolute;
+    top: 0;
+}
+
+
+
+.home{
+    background-image: url(../assets/BGCUTHOMEV2.svg);
+    background-size: 110vw;
+    background-position: 45% 2%;
+    background-repeat: no-repeat;
+    height: 300vh;
+    position: relative;
+}
+
+.home ::-webkit-scrollbar{
+    display: none;
+}
+
+.boxContent{
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    padding: 3%;
+
+    animation: slideInFromTop 2s ease-out;
+    justify-content: center;
+    position: relative;
+
+}
+
+
+
+.expTheme{
+    position: absolute;
+    width: 100vw;
+    height: fit-content;
+    top: 100vh;
+    background-color: rgba(255, 0, 0, 0);
+}
+
+
+
+.SIGN{
+    margin-top: 95%;
+    min-width: 150%;
+    margin-left: -25%;
+    position: relative;
+    z-index: 3;
+}
+
+.spotLight{
+    display: none;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    position: absolute;
+}
+
+.leftCurtain{
+    height: 175vh;
+    width: auto;
+    position: absolute;
+    left: -7%;
+    top: -9%;
+    z-index: 2;
+}
+
+.leftCurtainM{
+    display: none;
+}
+
+.rightCurtain{
+    height: 175vh;
+    width: auto;
+    position: absolute;
+    right: -6%;
+    top: -9%;
+    z-index: 2;
+}
+
+.rightCurtainM{
+    display: none;
+}
+
+.topCurtain{
+    width: 100vw;
+    position: absolute;
+    top: -2%;
+    z-index: 3;
+}
+
+.topCurtainM{
+    display: none;
+}
+
+.acqLogo{
+    display: none;
+}
+
+
+
+
+
+.leftCannon{
+    position:absolute;
+    bottom: -2%;
+    left: -2%;
+    width: 70%;
+    height: auto;
+}
+
+.rightCannons{
+    position:absolute;
+    bottom: -2%;
+    right: -5%;
+    width: 70%;
+
+}
+
+
+.tent{
+    width: 100vw;
+    bottom: -8.5%;
+    position: absolute;
+}
+
+.tentM{
+    display: none;
+}
+
+
+
+
+
+
+.BANNER{
+    position: absolute;
+    width: 70vw;
+    left: 15%;
+    top: 70vh;
+}
+
+.BdsiNNERM{
+    display: none;
+}
+
+.tickets{
+    width: 58vw;
+    position: absolute;
+    bottom: 3%;
+    left: 21.4%;
+}
+
+.ticketsM{
+    display: none;
+}
+
+@media(max-width:1440px){
+    .home{
+        background-image: url(../assets/BGCUTHOMEV2.svg);
+        background-size: 110vw;
+        background-position: 45% 2%;
+        background-repeat: no-repeat;
+        height: 225vh;
+        position: relative;
+    }
+
+    .leftCurtain{
+        height: 175vh;
+        width: auto;
+        position: absolute;
+        left: -20vw;
+        top: -14%;
+        z-index: 2;
+    }
+    
+    .leftCurtainM{
+        display: none;
+    }
+    
+    .rightCurtain{
+        height: 175vh;
+        width: auto;
+        position: absolute;
+        right: -20vw;
+        top: -13%;
+        z-index: 2;
+    }
+    
+    .rightCurtainM{
+        display: none;
+    }
+    
+    .topCurtain{
+        width: 100vw;
+        position: absolute;
+        top: -2%;
+        z-index: 3;
+    }
+    
+    .topCurtainM{
+        display: none;
+    }
+    
+    .acqLogo{
+        display: none;
+    }
+    
+    
+    
+
+    
+    .leftCannon{
+        position:absolute;
+        bottom: -2%;
+        left: -5%;
+        width: 70%;
+        height: auto;
+    }
+    
+    .rightCannons{
+        position:absolute;
+        bottom: -2%;
+        right: -5%;
+        width: 70%;
+    
+    }
+    
+    
+    .tent{
+        width: 100vw;
+        bottom: -8.5%;
+        position: absolute;
+    }
+    
+    .tentM{
+        display: none;
+    }
+    
+   
+    
+    
+    .BANNER{
+        position: absolute;
+        width: 70vw;
+        left: 15%;
+        top: 80vh;
+    }
+    
+    .BdsiNNERM{
+        display: none;
+    }
+    
+    .tickets{
+        width: 58vw;
+        position: absolute;
+        bottom: 2%;
+        left: 21.4%;
+    }
+    
+    .ticketsM{
+        display: none;
+    }
+}
+
+@media(max-width:1440px) and (max-height:768px){
+    .BANNER{
+        position: absolute;
+        width: 70vw;
+        left: 15%;
+        top: 30vh;
+    }
+}
+
+
+
+
+
+@media(max-width:1024px){
+    .home{
+        background-image: url(../assets/BGCUTHOMEV2.svg);
+        background-size: 110vw;
+        background-position: 45% 2%;
+        background-repeat: no-repeat;
+        height: 220vh;
+        position: relative;
+    }
+
+    .leftCurtain{
+        height: 130vh;
+        width: auto;
+        position: absolute;
+        left: -10vw;
+        top: -14%;
+        z-index: 2;
+    }
+    
+    .leftCurtainM{
+        display: none;
+    }
+    
+    .rightCurtain{
+        height: 130vh;
+        width: auto;
+        position: absolute;
+        right: -14vw;
+        top: -13%;
+        z-index: 2;
+    }
+    
+    .rightCurtainM{
+        display: none;
+    }
+    
+    .topCurtain{
+        width: 100vw;
+        position: absolute;
+        top: -2%;
+        z-index: 3;
+    }
+    
+    .topCurtainM{
+        display: none;
+    }
+    
+    .acqLogo{
+        display: none;
+    }
+    
+    
+    
+    
+    .leftCannon{
+        position:absolute;
+        bottom: -2%;
+        left: -5%;
+        width: 70%;
+        height: auto;
+    }
+    
+    .rightCannons{
+        position:absolute;
+        bottom: -2%;
+        right: -5%;
+        width: 70%;
+    
+    }
+    
+    
+    .tent{
+        min-width: 110vw;
+        left: -5vw;
+        bottom: -8.5%;
+        position: absolute;
+    }
+    
+    .tentM{
+        display: none;
+    }
+    
+ 
+    
+    
+    .BANNER{
+        position: absolute;
+        width: 70vw;
+        left: 15%;
+        top: 70vh;
+    }
+    
+    .BdsiNNERM{
+        display: none;
+    }
+    
+    .tickets{
+        width: 75vw;
+        position: absolute;
+        bottom: 0%;
+        left: 12.5vw;
+    }
+    
+    .ticketsM{
+        display: none;
+    }
+}
+
+@media(max-width:1024px) and (orientation:portrait){
+    .home{
+        height: 190vh;
+    }
+    .tent{
+        min-width: 150vw;
+        left:-25vw;
+    }
+
+    .tickets{
+        width: 95vw;
+        left: 2.5%;
+    }
+
+    .leftCurtain{
+        height: 130vh;
+        width: auto;
+        position: absolute;
+        left: -25vw;
+        top: -14%;
+        z-index: 2;
+    }
+    
+    .leftCurtainM{
+        display: none;
+    }
+    
+    .rightCurtain{
+        height: 130vh;
+        width: auto;
+        position: absolute;
+        right: -29vw;
+        top: -13%;
+        z-index: 2;
+    }
+    
+    .rightCurtainM{
+        display: none;
+    }
+
+    .BANNER{
+        position: absolute;
+        width: 90vw;
+        left: 5%;
+        top: 70vh;
+    }
+
+    .SIGN{
+        min-width: 250%;
+        margin-left:-75%;
+    }
+}
+
+
+@media(max-width:950px) and (orientation:landscape){
+    .home{
+        height: 300vh;
+    }
+}
+
+
+
+
+@media(max-width:900px){
+    .home{
+        background-image: url(../assets/phoneBG.svg);
+        background-size: 100vw auto;
+        background-position: 50% 2%;
+        background-repeat: no-repeat;
+        height: 390vh;
+        position: relative;
+    }
+
+    .leftCurtainM{
+        display: initial;
+        position: absolute;
+        left: -35vw;
+        top: -5%;
+        height: 115vh;
+    }
+
+    .rightCurtainM{
+        display: initial;
+        position: absolute;
+        right: -35vw;
+        top: -5%;
+        height: 115vh;
+    }
+
+    .topCurtainM{
+        display: initial;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+    }
+
+    .tentM{
+        display: initial;
+        top: 70vh;
+        width: 100vw;
+        height: auto;
+        left: 0;
+        position: absolute;
+    }
+
+    .SIGN{
+        margin-top: -15%;
+        margin-left: -20vw;
+        min-width: 120vw;
+    }
+
+    .spotLight{
+        display:initial;
+        
+    }
+
+    .ticketsM{
+        display: initial;
+        position: absolute;
+        width: 65vw;
+        height: auto;
+        left: 17.5vw;
+        top: 137vh;
+    }
+
+
+    .lineMaker{
+        display: none;
+    }
+
+
+    .contentLeft{
+        width: 100%;
+        padding-top: 15%;
+        margin-bottom: -20%;
+        z-index: 0;
+        position: relative;
+    }
+
+    #container{
+        margin-top: 69%;
+        justify-content:center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #contentRight{
+        display: none;
+    }
+
+
+   
+
+    #contentTop{
+        display: initial;
+        z-index: 0;
+        position: absolute;
+        bottom: 35%;
+    }
+
+    .leftCurtain, .rightCurtain, .leftACQ,.rightACQ, .trioBanner,.tent,.clouds,.tickets, .topCurtain{
+        display: none;
+    }
+
+    .leftCannon{
+        position:absolute;
+        bottom: -0.5%;
+        left: -1%;
+        width: 70%;
+        height: auto;
+    }
+    
+    .rightCannons{
+        position:absolute;
+        bottom: -0.5%;
+        right: 0%;
+        width: 70%;
+    
+    }
+    
+    
+
+    
+
+    
+}
+
+@media(max-width:900px) and (orientation:landscape){
+    .home{
+        background-image: url(../assets/BGCUTHOMEV2.svg);
+        height: 300vh;
+
+    }
+
+    .leftCurtain, .rightCurtain, .leftACQ,.rightACQ, .trioBanner,.tent,.clouds,.BANNER,.tickets,.topCurtain{
+        display: initial;
+    }
+
+    .rightCannons{
+        right: -10%;
+    }
+
+    .leftCannon{
+        left: -10%;
+    }
+
+    .leftCurtainM, .rightCurtainM,.topCurtainM, .leftACQM,.rightACQM, .trioBannerM,.tentM,.cloudsM,.BANNERM,.ticketsM, .spotLight, .clouds{
+        display: none;
+    }
+
+    .SIGN{
+        margin-top: -50vh;
+        margin-left: 0;
+        min-width: 100%;
+    }
+    .leftCurtain,.rightCurtain{
+        height: 100vh;
+        top: 0;
+    }
+
+    .leftCurtain{
+        left: -5%;
+    }
+
+    .rightCurtain{
+        right: -5%;
+    }
+
+    .topCurtain{
+        top: 0%;
+        left: 0;
+    }
+
+    .SIGN{
+        margin-top: -160vh;
+    }
+
+  
+    
+}
+
+
+
+@media(max-width:500px){
+    .home{
+        background-position: 49% 3%;
+        background-repeat: no-repeat;
+        height: 320vh;
+
+    }
+
+    .BANNER{
+        min-width:  110vw;
+        left: -5vw;
+        transform: rotate(45deg);
+    }
+
+    .boxContent{
+        font-size: 15px;
+        justify-content: center;
+        align-items: center;
+        height: 35vh;
+        padding-top: 25%;
+    }
+
+    .boxContentHeader{
+        text-align:center;
+        margin-top: -20%;
+    }
+
+    .boxContentText{
+        margin-top: 2%;
+        text-align: center;
+    }
+
+    .SIGN{
+        margin-top: -15%;
+        min-width: 150%;
+        margin-left: 0;
+    }
+
+    #line1::after,
+    #line2::after {
+      content: "\A";
+      white-space: pre;
+    }
+
+    .leftCurtainM{
+        display: initial;
+        position: absolute;
+        left: -34%;
+        top: -4%;
+        height: 105vh;
+    }
+
+    .rightCurtainM{
+        display: initial;
+        position: absolute;
+        right: -34%;
+        top: -4%;
+        height: 105vh;
+    }
+
+    .tentM{
+        display: initial;
+        top: 60vh;
+        width: 100vw;
+        height: auto;
+        left: 0;
+        position: absolute;
+    }
+
+    .ticketsM{
+        display: initial;
+        position: absolute;
+        width: 62.5vw;
+        height: auto;
+        left: 19.25vw;
+        top: 116vh;
+    }
+
+    .topCurtain{
+        top: 15%;
+    }
+
+
+    .lineMaker{
+        display: none;
+    }
+
+
+    .contentLeft{
+        width: 100%;
+        padding-top: 15%;
+        margin-bottom: -20%;
+        z-index: 0;
+        position: relative;
+    }
+
+    #container{
+        margin-top: 69%;
+        justify-content:center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #contentRight{
+        display: none;
+    }
+
+
+   
+
+    #contentTop{
+        display: initial;
+        z-index: 0;
+        position: absolute;
+        bottom: 35%;
+    }
+}
+
+@media(max-width:768px) and (orientation:landscape){
+    .SIGN{
+        margin-top: -100vh;
+    }
+}
+
+
+
+@media(max-width:450px){
+    .home{
+        background-position: 49% 3%;
+        background-repeat: no-repeat;
+        height: 260vh;
+
+    }
+
+    .leftCannon{
+        position:absolute;
+        bottom: -0.5%;
+        left: -0.5%;
+        width: 100%;
+        height: auto;
+    }
+    
+    .rightCannons{
+        position:absolute;
+        bottom: -0.5%;
+        right: -0.5%;
+        width: 100%;
+    
+    }
+
+    .ticketsM{
+        width: 58vw;
+        left: 21vw;
+        top: 105vh;
+    }
+}
+
+@media(max-width:385px){
+.ticketsM{
+    width: 50vw;
+    left: 25vw;
+    top: 110vh;
+}
+}
+
+@media(max-width:350px){
+    .home{
+        height: 220vh;
+    }
+
+    .ticketsM{
+        width: 55vw;
+        left: 22.5vw;
+        top: 100vh;
+    }
+} */
+
+
+.home {
+    background: linear-gradient(to bottom right, #3B0855, #152C44, #02485A, #26E5D3, #EE227D, #DB5365);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.rektorLogo {
+    width: 30%; 
+    animation: slideInFromBottom 1s ease-out;
+    position: relative;
+    z-index: 3;
+}

@@ -1,0 +1,327 @@
+.timer {
+    display: flex;
+    flex-direction: row; /* Stack the content vertically */
+    justify-content: center;
+    align-items: center;
+    background-image: url('../assets/VRAsset.png'); 
+    background-size: contain; /* Ensure the image covers the entire timer area */
+    background-repeat: no-repeat;
+    background-position: center; /* Center the image */
+    position: absolute;
+    z-index: 1;
+    width: 50vw; /* this controls the size, reminder for me */
+    margin: 0%;
+    height: 65vh;
+    top: 26%;
+    padding: 5%;
+    padding-top: 3%;
+    overflow: visible; 
+    clip-path: inset(0); 
+    transition: transform 0.2s ease, - 0.2s ease;
+    perspective: 2000px;
+    transform-style: preserve-3d;
+}
+
+
+
+.timer:hover {
+    transform: scale(1.15); 
+}
+
+.timerTilt {
+    display: flex;
+    place-items: center; 
+    transition: transform 0.2s ease-out, 0.1s ease-in;
+    transform-style: preserve-3d;
+}
+
+.timer:hover .timerTilt {
+    box-shadow: 5px 10px 18px rgba(255, 255, 255, 0.2), 0.2;
+}
+
+@font-face {
+    font-family: 'Bruno Ace SC'; /*a name to be used later*/
+    src: url('../assets/fonts/BrunoAce-Regular.ttf'); 
+}
+
+@font-face {
+    font-family: 'man'; /*a name to be used later*/
+    src: url('../assets/fonts/batmfa__.ttf'); 
+}
+
+
+/* .timer{
+    transform:
+    perspective(1500px)
+    rotateY(40deg)
+    rotateX(20deg)
+} */
+
+.oweekLogo {
+    font-size: 80px;
+    background-image: linear-gradient(to right, #26E5D3, #02485A, #498099); 
+    border-radius: 15px;
+    color: #DB5365; 
+    box-shadow: 5px 10px 18px rgba(213, 162, 144, 0.6);
+    position: absolute;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1%;
+    font-weight: bold;
+    top: -45%;
+}
+
+/* .containerT p {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: #26E5D3;
+} */
+
+.containerT p {
+    font-size: 4vw; /* Make the text responsive */
+    font-weight: 200;
+    text-align: center;
+}
+
+.dividerT {
+    color: #ffffff;
+    font-size: 320%;
+    margin-top : -10%;
+}
+
+/* .containerT {
+    padding: 2%;
+    line-height: 300%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 100px;
+    height: 20vh;
+    margin: 1%;
+    margin-top: 1%;
+} */
+
+.containerT {
+    display: flex;
+    flex-direction: column; /* Stack the numbers and labels vertically within each section */
+    align-items: center;
+    justify-content: center;
+    width: auto; /* Adjust to fit content */
+    height: auto; 
+    padding: 0 3vh;
+    text-align: center;
+    margin-top : -10%;
+}
+
+.descT{
+    font-family: 'Bruno Ace SC';
+    color: white;
+}
+
+.descT small{
+    width: 10%;
+    font-size: 3vh;
+}
+
+.containerT p{
+    color: #26E5D3;
+    font-family: 'Bruno Ace SC';
+    text-shadow:1px 1px 20px #2ce6ff, 1px 1px 10px #ccc;
+    padding-top: -30%;
+    font-size: 8vh;
+    margin-top: -20px;
+}
+
+
+.containerT .descT {
+    color: #ffffff;
+}
+
+.dividerT{
+    color: #26E5D3;
+    padding-top: 8%;
+    
+}
+
+.T_ExtraBits{
+    color: rgb(255, 191, 191);
+    position: absolute;
+    font-family: 'man';
+    bottom : 32%;
+    font-size: 5vh;
+}
+
+
+
+/* @media(max-width:1400px) {
+    .timer {
+        width: 70vw;
+        height: 25vh;
+    }
+    .containerT p {
+        font-size: 40px;
+    }
+    .oweekLogo {
+        font-size: 70px;
+        top: -25%;
+    }
+}
+
+@media(max-width:1280px) {
+    .timer {
+        top: 39%;
+        box-shadow: 2px 8px 16px rgba(37, 80, 100, 0.5);
+        height: 25vh;
+        width: 70vw;
+        padding-top: 8%;
+    }
+    .containerT p {
+        font-size: 40px;
+    }
+    .oweekLogo {
+        font-size: 70px;
+        background-image: linear-gradient(to right, #26E5D3, #02485A, #498099);
+        top: -25%;
+    }
+}
+
+@media(max-width:1000px) and (orientation:landscape) {
+    .timer {
+        top: 25%;
+        height: 40vh;
+    }
+    .oweekLogo {
+        font-size: 45px;
+    }
+    .containerT {
+        padding: 5%;
+    }
+}
+
+@media(max-width:950px) and (orientation:portrait){
+    .timer{
+        width: 80vw;
+    }
+}
+
+
+@media(max-width:768px){
+    .timer{
+        padding-top: 5%;
+        top: 33%;
+        width: 70%;
+        height: 20vh;
+    }
+
+    .containerT p{
+        font-size: 30px;
+        line-height: 100%;
+    }
+
+    .containerT{
+        padding: 1%;
+        min-width: 65px;
+    }
+
+    .oweekLogo{
+        font-size: 45px;
+        background-image: linear-gradient(to right, rgba(255, 209, 47, 1), rgba(253, 247, 227, 1), rgba(255, 209, 47, 1));
+      border-radius: 15px;
+
+      box-shadow: 5px 10px 18px rgb(255, 204, 0);
+      position: absolute;
+      padding-left: 5%;
+      padding-right: 5%;
+      padding-top: 1%;
+      font-weight: bold;
+    }
+  }
+
+  @media(max-width:920px) and (orientation:landscape){
+    .timer{
+        height: 30vh;
+        padding-top: 8%;
+        width: 60%;
+    }
+
+    .containerT p{
+        font-size: 25px;
+        line-height: 100%;
+    }
+
+    .oweekLogo{
+        font-size: 40px;
+        top: -45%;
+    }
+  }
+
+  @media(max-width:550px){
+
+    .timer{
+        box-shadow: 1px 4px 8px rgb(255, 204, 0);
+        width: 80%;
+    }
+    .containerT p{
+        font-size: 20px;
+    }
+    .containerT{
+        padding: 1%;
+        min-width: 45px;
+    }
+
+    .oweekLogo{
+        font-size: 35px;
+        background-image: linear-gradient(to right, rgba(255, 209, 47, 1), rgba(253, 247, 227, 1), rgba(255, 209, 47, 1));
+      border-radius: 15px;
+
+      box-shadow: 5px 10px 18px rgb(255, 204, 0);
+      position: absolute;
+      padding-left: 5%;
+      padding-right: 5%;
+      padding-top: 1%;
+      font-weight: bold;
+    }
+  }
+
+  @media(max-width:500px){
+    .timer{
+        box-shadow: 1px 4px 8px rgb(255, 204, 0);
+        width: 90vw;
+        padding: 3%;
+        padding-top: 7%;
+        height: 15vh;
+        top: 30%;
+    }
+    .containerT p{
+        font-size: 20px;
+        line-height: 100%;
+    }
+    .containerT{
+        padding: 1%;
+        min-width: 45px;
+        
+    }
+
+    .oweekLogo{
+        font-size: 35px;
+        background-image: linear-gradient(to right, rgba(255, 209, 47, 1), rgba(253, 247, 227, 1), rgba(255, 209, 47, 1));
+      border-radius: 15px;
+
+      box-shadow: 2px 5px 9px rgb(255, 204, 0);
+      position: absolute;
+      padding-left: 5%;
+      padding-right: 5%;
+      padding-top: 1%;
+      font-weight: bold;
+      top: -35%;
+    } 
+  }*/
+
+
+
+
+
+
+

@@ -1,0 +1,92 @@
+.footer {
+    background-color: #3B0855; /* Updated to a new color */
+    /* Alternative colors you might try: */
+    /* background-color: #2A2D43; */
+    /* background-color: #29204A; */
+    /* background-color: #241B2E; */
+    height: 20vh;
+    z-index: 2;
+    justify-content: space-between; 
+    align-items: center;
+    display: flex;
+    color: rgb(251, 239, 212);
+    padding: 0 2rem;
+}
+
+.left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem; 
+}
+
+.middle {
+    justify-content: center;
+    align-items: center;
+}
+
+#vrRektor {
+    height: auto;
+    width: 20vw; /* Adjusted to maintain neatness */
+    opacity: 0.9;
+    margin-left: 5%;
+}
+
+#ucLogo {
+    height: 12vh;
+    width: auto;
+    opacity: 0.9;
+}
+
+.footer .right {
+    text-align: end;
+    justify-content: start;
+    align-items: end;
+    display: flex;
+    opacity: 0.9;
+    margin-right: 2vw;
+}
+
+@media (max-width: 1024px) {
+    #ucLogo {
+        height: 8vh;
+    }
+
+    #vrRektor {
+        width: 55vw;
+        height: auto;
+    }
+
+    .footer .right {
+        font-size: 1rem;
+        line-height: 1.25rem;
+    }
+}
+
+@media (max-width: 920px) and (orientation: landscape) {
+    #vrRektor {
+        width: 40vw;
+        height: auto;
+    }
+
+    .footer .right {
+        font-size: 0.5rem;
+        line-height: 0.75rem;
+    }
+}
+
+@media (max-width: 640px) {
+    #ucLogo {
+        height: 7vh;
+    }
+
+    #vrRektor {
+        width: 55vw;
+        height: auto;
+    }
+
+    .footer .right {
+        font-size: 0.5rem;
+        line-height: 0.75rem;
+    }
+}
