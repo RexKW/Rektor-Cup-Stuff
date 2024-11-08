@@ -45,3 +45,26 @@
     left : 50%;
     animation: parallax-spin infinite 21s linear;
   }
+
+
+  @media(max-width: 600px) {
+    
+    .tp-big{
+      width: 80%;
+      bottom: 25%;
+      right : -55%;
+    }
+
+    .tp-med{
+      width: 80%;
+      bottom : 50%;
+      left : -45%;
+    }
+
+    .tp-smol{
+      width: 90%;
+      top : 80%;
+      left : 5%;
+    }
+    
+}

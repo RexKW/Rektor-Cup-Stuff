@@ -154,6 +154,54 @@
 }
 
 
+@media(max-width: 600px) {
+
+    .T_ExtraBits{
+        color: rgb(255, 191, 191);
+        position: absolute;
+        font-family: 'man';
+        width: 150%;
+        bottom : 64%;
+        font-size: 3vh;
+    }
+
+    .timer{
+        width: 90%;
+    }
+
+    .timerTilt {
+        width: 150%;
+        margin: 0.4vh;
+    }
+
+    .descT small{
+        width: 10%;
+        font-size: 1vh;
+    }
+
+    .containerT{
+        padding: 0 1.5vh;
+    }
+
+    .containerT p{
+        color: #26E5D3;
+        font-family: 'Bruno Ace SC';
+        text-shadow:1px 1px 20px #2ce6ff, 1px 1px 10px #ccc;
+        padding-top: -40%;
+        font-size: 3vh;
+        margin-top: -10px;
+    }
+
+    .dividerT{
+        width: 20%;
+        padding-top: 2%;
+        font-size: 3vh;
+    }
+    
+}
+
+
+
 
 /* @media(max-width:1400px) {
     .timer {

@@ -18,10 +18,11 @@
     }
 }
 
-@media(max-width:640px){
+@media(max-width:600px){
     .countdown{
         background-position: 45% 0vh;
-        background-size: 175vw;
+        background-size: 120vw;
+        background-image: url('../assets/Countdown Phone Hi-Fi.svg');
     }
 }
 
