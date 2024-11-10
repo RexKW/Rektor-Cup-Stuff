@@ -12,7 +12,7 @@
     position: fixed;
     width: 100%;
     padding: 0 2%;
-    z-index: 4;
+    z-index: 100;
     background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
     backdrop-filter: blur(20px); /* blur effect here, increasing adds blur */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
@@ -22,13 +22,15 @@
 /* Logo styling */
 .logo {
     width: auto;
-    height: 12vh;
+    height: 9vh;
     object-fit: contain;
+    margin-right: 1rem; 
 }
 
 .navbar-left {
     display: flex;
     align-items: center;
+    padding-left: 1rem;
 }
 
 .navbar-right {

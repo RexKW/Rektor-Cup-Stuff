@@ -1,5 +1,41 @@
 import React from 'react';
 import '../styles/Home.css';
+import HomeParallax from "../components/HomeParallax";
+import HomeTitle from "../components/HomeTitle";
+import mainBuildings1 from '../assets/mainbuildings1.svg';
+import mainBuildings2 from '../assets/mainbuildings2.svg';
+import mainPartRektor from '../assets/mainpartrektor.svg';
+import clouds1 from '../assets/clouds1.svg';
+import intersection from '../assets/LP-BG-Intersection.svg';
+import hologramImage from '../assets/Hologram spin full.svg';
+
+import TrailerBorder from '../assets/LP-BG-Trailer.svg';
+import BlueSphere from '../assets/LP-BG-Bottom-BlueSphere.svg';
+import BlueWave from '../assets/LP-BG-Bottom-BlueWave.svg';
+import Hologram from '../assets/LP-BG-Bottom-Hologram.svg';
+
+import InfoText from '../assets/LP-BG-InfoText.svg';
+import Poster from '../assets/Escape-Room-Poster.jpg';
+
+import bottomBG from '../assets/LP-BG-Bottom.svg';
+
+import Intersection2 from '../assets/LP-BG-Bottom-ShadowIntersection.svg';
+import Train from '../assets/LP-BG-Bottom-Train.svg';
+
+import bottomCity from '../assets/LP-BG-Bottom-City.webp';
+import Rail from '../assets/LP-BG-Bottom-Rail.svg';
+import RailShadow from '../assets/LP-BG-Bottom-RailShadowIntersection.svg';
+
+import RightParticle from '../assets/LP-BG-Bottom-RightParticle.svg';
+import LeftParticle from '../assets/LP-BG-Bottom-LeftParticle.svg';
+import JoinUsBG from '../assets/LP-BG-Bottom-JoinUS.svg';
+
+import Wave from '../assets/LP-BG-Bottom-Wave.svg';
+
+
+
+
+
 import { useParallax } from 'react-scroll-parallax';
 import RektorLogo from '../assets/RektorLogo.png';
 import leftC from '../assets/leftCurtainwLight.svg';
@@ -96,33 +132,100 @@ const Home: React.FC = () => {
 
   return (
     <div className='home'>
-      {/* <img src={topC} className='topCurtain' ref={parallaxRef12} loading="lazy" alt="Top Curtain" />
-      <img src={leftC} className='leftCurtain' ref={parallaxRef1} loading="lazy" alt="Left Curtain" />
-      <img src={leftCM} className='leftCurtainM' ref={parallaxRef13} loading="lazy" alt="Left Curtain Mobile" />
-      <img src={rightC} className='rightCurtain' ref={parallaxRef2} loading="lazy" alt="Right Curtain" />
-      <img src={rightCM} className='rightCurtainM' ref={parallaxRef14} loading="lazy" alt="Right Curtain Mobile" />
-      <img src={topCM} className='topCurtainM' ref={parallaxRef15} loading="lazy" alt="Top Curtain Mobile" />
-      <img src={acqLogo} className='acqLogo' loading="lazy" alt="Acquisition Logo" />
-      <div className='acqGlow'></div>
-      <div id='container' className='flex relative m-[8%]'>
-        <div className='contentLeft z-0 mt-[-50%] mx-auto'>
-          <div className='boxContent mt-5'>
-            <img src={ACQUIREWITHBG} className='SIGN' loading="lazy" alt="Acquire with Background" />
-          </div>
-        </div>
+      <HomeTitle className='home-title' />
+      {/* Spinny Thingy */}
+      <HomeParallax className='H_Parallax' />
+      <div className="main-buildings-container relative">
+        <img src={mainBuildings1} alt="Main Buildings 1" className="main-buildings1" />
+        <img src={mainBuildings2} alt="Main Buildings 2" className="main-buildings2" />
+        <img src={mainPartRektor} alt="Main Part Rektor" className="main-part-rektor" />
+        <img src={clouds1} alt="Clouds 1" className="clouds1" />
+        <div className='floor'></div>
+        <HomeTitle className='home-title' />
       </div>
-      <img src={BEEGTENT} className='tent' ref={parallaxRef5} loading="lazy" alt="Big Tent" />
-      <img src={smolTent} className='tentM' ref={parallaxRef16} loading="lazy" alt="Small Tent" />
-      <img src={lights} className='spotLight' loading="lazy" ref={parallaxRef18} alt="Spotlight" />
-      <img src={cannonL} className='leftCannon' ref={parallaxRef11} loading="lazy" alt="Left Cannon" />
-      <img src={cannonR} className='rightCannons' ref={parallaxRef10} loading="lazy" alt="Right Cannon" />
-      <img src={BANNER} className='BANNER' ref={parallaxRef8} loading="lazy" alt="Banner" />
-      <img src={ticket} className='tickets' ref={parallaxRef9} loading="lazy" alt="Tickets" />
-      <img src={ticketM} className='ticketsM' ref={parallaxRef17} loading="lazy" alt="Tickets Mobile" /> */}
 
-      <img src={RektorLogo} className="rektorLogo anim" alt="Rektor Logo" loading="lazy" />
+      <div className='abtbackground'>
+      <HomeTitle className='home-title' />
+      <p>test</p>
     </div>
+
+   <div className='bottomDesc'>
+
+    <div className='about-section'>
+      <h2>About</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  commodo consequat.</p>
+    </div>
+
+    <br></br>
+
+    <div className='trailer-section'>
+      <h2>Trailer</h2>
+
+      <img src={hologramImage} alt="Hologram" className="left-spinny" />
+
+      <div className="holographic-effect">
+          <img src={BlueSphere} alt="blue sphere" className="bsphere-bg" />
+          <img src={BlueWave} alt="blue wave" className="bwave-bg" />
+          <img src={Hologram} alt="hologram" className="hologram-bg" />
+        </div>
+
+      <div className='trailer-container'>
+        <img src={TrailerBorder} alt="Trailer Background" className="trailer-bg" />
+        <iframe className = "trailer-video"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/watch?v=-4tc3CZPE-g"
+          title="Trailer Escape Room"
+          frameBorder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      </div>
+    </div>
+
+    <br></br>
+
+
+    <div className='png-outlines'>
+      <h2>Info</h2>
+      <div className="side-by-side">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  commodo consequat.</p>
+        <img src={InfoText} alt="Info Text" className="info-bg" />
+        <img src={Poster} alt="Poster" className="poster-bg" />
+      </div>
+    </div>
+
+   </div>
+
+  <div className='bottom-backgrounds'>
+    <img src={intersection} alt="Intersection Background" className="inter-bg" />
+    <img src={bottomBG} alt="Bottom Background" className="bottom-bg" />
+    <img src={Intersection2} alt="Shadow Intersection" className="shadow-intersection" />
+    <img src={bottomCity} alt="Bottom City" className="bottom-city" />
+
+    <img src={Train} alt="Train" className="train" />
+    <img src={Rail} alt="Rail" className="rail" />
+    <img src={RailShadow} alt="Rail Shadow Intersection" className="rail-shadow-intersection" />
+
+    <div className="particle-container"> 
+      <img src={RightParticle} alt="Left Particle" className="left-particle" />
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSd8JsrvdZAiCeZDJqkCX-2xialyxwIlDHJbsEgJy0JGscBHug/viewform">
+        <p>Join Now</p>
+      </a>
+      <img src={JoinUsBG} alt="Join Us Background" className="join-us-bg" />
+      <img src={LeftParticle} alt="Right Particle" className="right-particle" />
+      <img src={Wave} alt="Wave" className="wave" />
+    </div>
+  </div>
+
+  </div>
   );
 };
 
 export default Home;
+
+
+
+
+
+

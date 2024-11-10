@@ -1,5 +1,7 @@
 .footer {
+    position: relative; /* or 'fixed' if you want it always visible */
     background-color: #3B0855; /* Updated to a new color */
+    z-index: 99; /* Ensure it's above other content */
     /* Alternative colors you might try: */
     /* background-color: #2A2D43; */
     /* background-color: #29204A; */
