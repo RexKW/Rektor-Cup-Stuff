@@ -1,8 +1,6 @@
 import React from 'react';
 import '../styles/Footer.css';
-import acqLogo from '../assets/AcqLogo.png';
 import ucLogo from '../assets/Emblem UC Surabaya-min.png';
-import oLogo from '../assets/Logo Oweek Putih.png';
 import VRrektor from '../assets/VRrektor.png';
 
 const Footer: React.FC = () => {

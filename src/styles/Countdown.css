@@ -20,7 +20,8 @@
 
 @media(max-width:640px){
     .countdown{
-        background-position: 45% 0vh;
+        margin-top: -10vh;
+        background-position: 40% 0vh;
         background-size: 120vw;
         background-image: url('../assets/Countdown Phone Hi-Fi.svg');
     }

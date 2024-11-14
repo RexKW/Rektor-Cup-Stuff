@@ -21,7 +21,6 @@ body{
 
 html, body {
   height: 100%;
-  overflow-x: hidden; /* Prevents horizontal scroll */
 }
 
 .App-logo {

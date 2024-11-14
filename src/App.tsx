@@ -1,14 +1,16 @@
-import React from 'react';
+
 import './App.css';
 import Navbar from './components/Navbar';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+
 import Home from './pages/Home';
 import Countdown from './pages/Countdown';
-import Footer from './components/Footer'
 import 'flowbite/dist/flowbite.css';
+import { ParallaxProvider } from 'react-scroll-parallax';
 
-const App: React.FC = () => {
+const App = () => {
   return (
+    <ParallaxProvider>
     <div className="App">
       <Router>
       <Navbar />
@@ -18,10 +20,12 @@ const App: React.FC = () => {
           {/* <Route path="/about" element={<About />} />
           <Route path="/rules" element={<Rules />} />
           <Route path="/schedule" element={<Schedule />} /> */}
+          <Route path="*" element={<Navigate to="/"/>}/>
         </Routes>
-        <Footer />
+        
       </Router>
     </div>
+    </ParallaxProvider>
   );
 };
 

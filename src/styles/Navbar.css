@@ -5,19 +5,25 @@
 }
 
 .navbar {
+    position: relative;
     display: flex;
     align-items: center; 
     justify-content: space-between;
     height: 10vh;
     position: fixed;
     width: 100%;
-    padding: 0 2%;
+    padding: 0 0%;
     z-index: 100;
     background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
     backdrop-filter: blur(20px); /* blur effect here, increasing adds blur */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
+
+
+
+
+
 
 /* Logo styling */
 .logo {
@@ -51,24 +57,39 @@
 }
 
 .navbar-right a:hover {
-    color: #fede75;
+    color: #75eefe;
 }
 
 /* Burger menu for smaller screens */
 .burger {
     display: none; /* Hidden on larger screens */
-    color: rgba(255, 209, 47, 1);
+    color: rgb(47, 227, 255);
     background-color: transparent;
     border: none;
     cursor: pointer;
     z-index: 7;
 }
 
+.hidden{
+    position: absolute;
+    background-color: #392843a1;
+    top: 10vh;
+    font-family: 'Bruno Ace SC', sans-serif;
+    color: #75eefe;
+}
+
 /* Show burger menu button only on smaller screens */
-@media (max-width: 640px) {
+@media (max-width: 768px) {
     .burger {
         display: block;
         transform: scale(1.5);
+    }
+
+    .logo {
+        width: auto;
+        height: 6vh;
+        object-fit: contain;
+        margin-right: 1rem; 
     }
 
     .navbar-right {
@@ -85,23 +106,25 @@
         flex-direction: column;
         transition: 0.5s;
     }
+
+
 }
 
 /* Keyframes for animation */
 @keyframes slideIn {
     0% {
-        transform: translateX(100vw);
+        transform: translateX(-100vw);
     }
     100% {
-        transform: translateX(0vw);
+        transform: translateX(0vh);
     }
 }
 
 @keyframes slideOut {
     0% {
-        transform: translateX(0vw);
+        transform: translateX(0vh);
     }
     100% {
-        transform: translateX(100vw);
+        transform: translateX(-100vw);
     }
 }

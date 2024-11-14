@@ -4,7 +4,8 @@ import '../styles/HomeTitle.css';
 const HomeTitle: React.FC<{ className?: string }> = ({ className }) => {
   return (
     <div className={`home-title-container ${className}`}>
-      <p>Judul Escape</p>
+      <p>Entation</p>
+      <span className='subTitle'><p>The Unseen Faction</p></span>
     </div>
   );
 };
