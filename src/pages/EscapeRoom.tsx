@@ -8,6 +8,7 @@ import mainPartRektor from '../assets/rektorPortal.webp';
 import clouds1 from '../assets/clouds1.svg';
 import hologramImage from '../assets/Hologram spin full.svg';
 
+import TrailerBorder from '../assets/LP-BG-Trailer.svg';
 import BlueSphere from '../assets/bgBlueBlur.svg';
 import BlueWave from '../assets/LP-BG-Bottom-BlueWave.svg';
 import Hologram from '../assets/LP-BG-Bottom-Hologram.svg';
@@ -22,29 +23,15 @@ import Train from '../assets/LP-BG-Bottom-Train.svg';
 import bottomCity from '../assets/LP-BG-Bottom-City.webp';
 import Rail from '../assets/LP-BG-Bottom-Rail.svg';
 import RailShadow from '../assets/LP-BG-Bottom-RailShadowIntersection.svg';
-import EsportsCategory from '../assets/EsportsCategory.png';
-import SportsCategory from '../assets/SportsCategory.png';
-import ArtCategory from '../assets/ArtCategory.png';
-import LearningCategory from '../assets/LearningCategory.png';
 
+import RightParticle from '../assets/LP-BG-Bottom-RightParticle.svg';
+import LeftParticle from '../assets/LP-BG-Bottom-LeftParticle.svg';
+
+import Wave from '../assets/LP-BG-Bottom-Wave.svg';
 import { useParallax } from 'react-scroll-parallax';
 
-import CompetitionPanel from '../components/CompetitionPanel'; 
 
-import basketball from '../assets/rektor-img/basketball.svg';
-import futsal from '../assets/rektor-img/futsal.svg';
-import billiard3 from '../assets/rektor-img/billiard3.svg';
-import badminton from '../assets/rektor-img/badminton.svg';
-import ml from '../assets/rektor-img/ml.svg';
-import pubg from '../assets/rektor-img/pubg.svg';
-import dance from '../assets/rektor-img/dance.svg';
-import band from '../assets/rektor-img/band.svg';
-import coc from '../assets/rektor-img/coc.svg';
-import debat from '../assets/rektor-img/debat.svg';
-import catur from '../assets/rektor-img/catur.svg';
-
-
-const Home = () => {
+const EscapeRoom = () => {
 
   const {ref: backBuilding} = useParallax<HTMLImageElement>({
       speed: 10,
@@ -97,20 +84,20 @@ const {ref: bottomBuilding} = useParallax<HTMLImageElement>({
 
 });
 
-// const {ref: bottomWave} = useParallax<HTMLImageElement>({
-//   translateY: [0, -20],
-//   easing:'easeOut'
-// })
+const {ref: bottomWave} = useParallax<HTMLImageElement>({
+  translateY: [0, -20],
+  easing:'easeOut'
+})
 
-// const {ref: leftBottom} = useParallax<HTMLImageElement>({
-//   translateX: [50, 0],
-//   easing:'easeOut'
-// })
+const {ref: leftBottom} = useParallax<HTMLImageElement>({
+  translateX: [50, 0],
+  easing:'easeOut'
+})
 
-// const {ref: rightBottom} = useParallax<HTMLImageElement>({
-//   translateX: [-50, 0],
-//   easing:'easeOut'
-// })
+const {ref: rightBottom} = useParallax<HTMLImageElement>({
+  translateX: [-50, 0],
+  easing:'easeOut'
+})
 
 
 
@@ -129,46 +116,60 @@ const {ref: bottomBuilding} = useParallax<HTMLImageElement>({
         </div>
       </div>
 
-      
-      
+
+      <img src={BlueSphere} alt="blue sphere" className="bsphere-bg" />
       <div className='bottomDesc'>
       
         <div className='about-section' ref={aboutText as LegacyRef<HTMLDivElement>}>
           <h2>About</h2>
-          <p id='contentAbout'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p id='contentAbout'>Step into the darkness at Entation, a horror-themed escape room where fear and suspense await at every turn. As you and your team navigate through chilling settings, solve eerie puzzles, and uncover terrifying secrets, the clock is your only ally. Can you escape before the horrors close in? Only the bravest will make it out alive. Are you ready to face your fears?</p>
         </div>
-        
 
         <img src={hologramImage} alt="Hologram" className="left-spinny" />
         <div className='trailer-section' ref={trailer as LegacyRef<HTMLDivElement>}>
+          <h2>Trailer</h2>
+
+          
+
           <div className="holographic-effect">
-
-          
-
-          <div className="competition-category-container">
-          <h2>Competition Categories</h2>
-            <div className="competition-images">
-            <img src={SportsCategory} alt="Cat 1" className="category-image" />
-            <img src={EsportsCategory} alt="Cat 2" className="category-image" />
-            <img src={ArtCategory} alt="Cat 3" className="category-image" />
-            <img src={LearningCategory} alt="Cat 4" className="category-image" />
+              
+              <img src={BlueWave} alt="blue wave" ref={waveHolo as LegacyRef<HTMLImageElement>} className="bwave-bg" />
+              <img src={Hologram} alt="hologram" className="hologram-bg" />
             </div>
-          </div>
-          
-          <div className="Panel-Container">
-            <CompetitionPanel />
-          </div>
 
-          <img src={BlueSphere} alt="blue sphere" className="bsphere-bg" />
-          <img src={BlueWave} alt="blue wave" ref={waveHolo as LegacyRef<HTMLImageElement>} className="bwave-bg" />
-        </div>
-
-          
+          <div className='trailer-container' >
+            <img src={TrailerBorder} alt="Trailer Background" className="trailer-bg" />
+            <iframe className = "trailer-video"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/pZDMzIh3gyQ"
+              title="Trailer Escape Room"
+              frameBorder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
         </div>
 
         <br></br>
 
 
+        <div className='png-outlines'>
+          <h2>Info</h2>
+          <div className="side-by-side">
+            <p className="hideText"><span className='text-xl lg:text-5xl entation text-red-800'>Entation</span><br className='py-5'/><br/>Special Price<br/> (11 Nov - 13 Nov 2024)💸💰<br/>
+            Early Bird Price :<br/> Rp 40.000/orang,<br/> Rp 200.000/team<br/><br/>
+
+            Normal Price <br/>(14 Nov - 23 Nov 2024)💸💰<br/>
+            Normal Price :<br/> Rp 45.000/orang,<br/> Rp 225.000/team<br/><br/>
+
+            CP Registrasi <br/>Escape Room :<br/> 
+            082252477198 / Meishy<br/> 
+            081294064383 / Eugene</p>
+            <img src={InfoText} alt="Info Text" className="info-bg" />
+            <img src={Poster} alt="Poster" className="poster-bg" />
+          </div>
+        </div>
         <div className='bottom-backgrounds'>
           <img src={Intersection2} alt="Shadow Intersection" className="shadow-intersection" />
           <div className='citySection'>
@@ -179,11 +180,23 @@ const {ref: bottomBuilding} = useParallax<HTMLImageElement>({
           </div>
         </div>
       </div>
+      <div className="particle-container relative z-1"> 
+          <img src={RightParticle} alt="Left Particle" ref={rightBottom as LegacyRef<HTMLImageElement>} className="left-particle" />
+            <p className='what absolute z-7 text-xl md:text-6xl text-white top-[10%] text-center w-screen'>What are you<br/>waiting for?</p>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSd8JsrvdZAiCeZDJqkCX-2xialyxwIlDHJbsEgJy0JGscBHug/viewform">
+            <button className='buttonJoin'>
+            <p>Join Now</p>
+            </button>
+          </a>
+
+          <img src={LeftParticle} alt="Right Particle" ref={leftBottom as LegacyRef<HTMLImageElement>} className="right-particle" />
+          <img src={Wave} alt="Wave" className="wave" ref={bottomWave as LegacyRef<HTMLImageElement>} />
+        </div>
       </div>
   );
 };
 
-export default Home;
+export default EscapeRoom;
 
 
 

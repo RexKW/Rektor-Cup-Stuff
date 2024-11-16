@@ -23,6 +23,7 @@ const Navbar: React.FC = () => {
     <div className='navbar flex relative'>
       <div className='hidden w-screen' id={openLinks ? "open" : "close"}>
           <Link to="/" onClick={closeNav} className='py-4'>Home</Link>
+          <Link to="/escaperoom" onClick={closeNav} className='py-4'>Escape Room</Link>
           <Link to="/countdown" onClick={closeNav} className='py-4'>Countdown</Link>
         </div>
 
@@ -38,6 +39,7 @@ const Navbar: React.FC = () => {
       <div className='Front flex absolute bottom-5 right-5'>
         <div className='navbar-right mr-5'>
           <Link to="/" onClick={closeNav}>Home</Link>
+          <Link to="/escaperoom" onClick={closeNav} >Escape Room</Link>
           <Link to="/countdown" onClick={closeNav} >Countdown</Link>
         </div>
         <button onClick={toggleNav} id="burger" className='burger mb-2 mr-1'>
