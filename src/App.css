@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.App {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: #412B5D;
+  position: relative;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+  overflow-x: hidden; /* Prevents horizontal scroll */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #498099; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to bottom, #D5A290, #FD8083, #FD7767); 
+  border-radius: 15px;
+  transition: 300ms;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-image: linear-gradient(to bottom, #FD7767, #FD8083, #D5A290); 
+  border-radius: 15px;
+  transition: 300ms;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #412B5D;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

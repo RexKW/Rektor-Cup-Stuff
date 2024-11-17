@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    height: 10vh;
+    position: fixed;
+    width: 100%;
+    padding: 0 2%;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    backdrop-filter: blur(20px); /* blur effect here, increasing adds blur */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Logo styling */
+.logo {
+    width: auto;
+    height: 9vh;
+    object-fit: contain;
+    margin-right: 1rem; 
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-family: 'Bruno Ace SC', sans-serif;
+    font-size: 1.2rem;
+}
+
+
+/* Link styling */
+.navbar-right a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.navbar-right a:hover {
+    color: #fede75;
+}
+
+/* Burger menu for smaller screens */
+.burger {
+    display: none; /* Hidden on larger screens */
+    color: rgba(255, 209, 47, 1);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 7;
+}
+
+/* Show burger menu button only on smaller screens */
+@media (max-width: 640px) {
+    .burger {
+        display: block;
+        transform: scale(1.5);
+    }
+
+    .navbar-right {
+        display: none;
+    }
+
+    .navbar #open {
+        display: flex;
+        flex-direction: column;
+        animation: slideIn 0.5s;
+    }
+
+    .navbar #close {
+        flex-direction: column;
+        transition: 0.5s;
+    }
+}
+
+/* Keyframes for animation */
+@keyframes slideIn {
+    0% {
+        transform: translateX(100vw);
+    }
+    100% {
+        transform: translateX(0vw);
+    }
+}
+
+@keyframes slideOut {
+    0% {
+        transform: translateX(0vw);
+    }
+    100% {
+        transform: translateX(100vw);
+    }
+}

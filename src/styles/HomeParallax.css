@@ -1,0 +1,40 @@
+.home-parallax-container {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.home-parallax-image {
+    width: auto;
+    height: auto;
+    opacity: 0.5;
+    animation: parallax-spin infinite linear;
+}
+
+@keyframes parallax-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Top-Left Spinny Thing */
+.top-left-spinny {
+    width: 30%;  /* Size of the spinny thing */
+    position: absolute;
+    top: -5%; /* Vertical position - top of the screen */
+    left: -10%; /* Horizontal position - left side of the screen */
+    animation-duration: 50s;
+}
+
+/* Bottom-Right Spinny Thing */
+.bottom-right-spinny {
+    width: 30%;
+    position: absolute;
+    top: 20%;
+    right: -10%;
+    animation-duration: 40s;
+}

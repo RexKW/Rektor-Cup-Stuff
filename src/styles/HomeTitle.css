@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'man';
+    src: url('../assets/fonts/batmfa__.ttf');
+}
+
+.home-title-container {
+    position: absolute; /* Fix position */
+    width: 100%;
+    top: 28vh; /* Adjust as needed */
+    text-align: center;
+    z-index: 10; /* Ensure it stays above other content */
+}
+
+.home-title-container p {
+    color: #97E7FF; /* A color that contrasts with the background */
+    font-size: 12vh;
+    font-family: 'man';
+}

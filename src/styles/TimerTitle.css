@@ -1,0 +1,32 @@
+
+@font-face {
+    font-family: 'man'; /*a name to be used later*/
+    src: url('../assets/fonts/batmfa__.ttf'); 
+}
+
+
+.title-container{
+    position: absolute;
+    width: 100%;
+    right: 25%;
+    top : 15%;
+}
+
+.title-container p{
+    color: white;
+    width: 150%;
+    font-size: 15vh;
+    font-family: 'man';
+}
+
+
+@media(max-width: 600px) {
+    .title-container p{
+        color: white;
+        width: 150%;
+        margin-top: 50%;
+        font-size: 4.5vh;
+        font-family: 'man';
+    }
+    
+}
