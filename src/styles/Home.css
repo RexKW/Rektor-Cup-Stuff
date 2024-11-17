@@ -1,0 +1,862 @@
+
+@font-face {
+    font-family: 'Bruno'; /*a name to be used later*/
+    src: url('../assets/fonts/BrunoAce-Regular.ttf'); 
+}
+
+.home {
+    min-height: 100vh; /* Allows the container to grow beyond the viewport */
+    width: 100vw;
+    background-image: url('../assets/mainbackground.svg'); /* Same background as countdown */
+    background-size: 150vw;
+    background-repeat: no-repeat;
+    background-position: -2.75vw -30vh;
+    display: flex;
+    flex-direction: column; /* Allows stacking of items vertically */
+    justify-content: flex-start; /* Start items from the top */
+    align-items: center;
+    position: relative;
+    padding-bottom: 10vh;
+    background-color: #000919;
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.rektorLogo {
+    width: 30%; 
+    animation: slideInFromBottom 1s ease-out;
+    position: relative;
+    z-index: 3;
+}
+
+
+.main-buildings-container {
+    position: relative;
+    width: 100%;
+    height: 150vh;
+    padding-bottom: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.main-buildings1 {
+    width: 100%;
+    z-index: 1; /* Keeps it behind other elements */
+    bottom: 10%;
+    position: absolute;
+
+}
+
+.main-buildings2 {
+    position: absolute;
+    width: 100%;
+    z-index: 2; /* Places it above mainbuildings1 */
+    opacity: 1; /* Optional: Adjust opacity for a layered effect */
+    bottom: 0;
+}
+
+.main-part-rektor {
+    position: absolute;
+    width: 100%;          /* Controls size */
+    z-index: 3;          /* Ensures layering */
+    left: 0%;
+    bottom: -10%; /* Adjust this value to push the image further down */
+
+}
+
+.central{
+    width: 100vw;
+    height: 150vh;
+    position: absolute;
+    bottom: 0;
+    z-index: 3;
+}
+
+.clouds1 {
+    width: 100%;
+    transform: scale(1.25);; /* Moves it slightly to the left */
+    z-index: 3; /* Places it above mainbuildings1 */
+    margin-top: -24vh; /* Slight negative margin to overlap with mainbuildings1 */
+    opacity: 0.9; /* Optional: Adjust opacity for a layered effect */
+    position: absolute;
+    bottom: -15vh;
+}
+
+@font-face {
+    font-family: 'man';
+    src: url('../assets/fonts/batmfa__.ttf');
+}
+
+@font-face {
+    font-family: 'bruno mars';
+    src: url('../assets/fonts/BrunoAce-Regular.ttf');
+}
+
+.floor{
+    width: 100vw;
+    height: 30vh;
+    position: absolute;
+    z-index: 2;
+    bottom: -22vh;
+    background-color: #551A5C;
+}
+
+.abtbackground{
+    background: rgb(71,0,94);
+    background: linear-gradient(0deg, rgba(71,0,94,1) 0%, rgba(85,26,92,1) 100%);
+    width: 100vw;
+}
+
+.bottomDesc{
+    top: 20%;
+    min-height: 100vh;
+    width: 100vw;
+    max-height: 450vh;
+    position: relative;
+    background-color: #551A5C;
+    background-image: linear-gradient(#551A5C,#42214E, #5A284D);
+}
+
+
+
+.bottomDesc h2{
+    color: white;
+    font-family: 'man';
+    font-size: 10vh;
+}
+
+.what{
+    font-family: 'man';
+}
+
+.bottomDesc p{
+    color: white;
+    font-size: 4vh;
+    height: 700px;
+}
+
+.png-outlines{
+    margin-top: 200px;
+    position: relative;
+        z-index: 2;
+}
+
+.png-outlines p{
+    font-size: 25px;
+    position: absolute;
+    width: 30%;
+    right: 55.5%;
+    margin-top: -5%;
+}
+
+.bottomDesc br{
+    height: 40px;
+}
+
+.inter-bg{
+    position: absolute;
+    width: 100vw;
+    height: auto;
+    z-index: 1;
+    top: 0%;
+    display: none;
+}
+
+.bottom-bg1{
+    position: relative;
+    z-index: 0;
+    width: 100vw;
+    height: auto;
+}
+
+.bottom-city1{
+    position: absolute;
+    z-index: -99;
+    width: 90%;
+    height: auto;
+    bottom: 0%;
+    left: 5%;
+    opacity: 40%;
+}
+
+.train1{
+    width: 80%;
+    margin-left: 40%;
+    height: auto;
+    bottom: 11%;
+    position: absolute;
+    z-index: 1;
+}
+
+
+.rail{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+}
+
+.shadow-intersection{
+    width: 100%;
+    height: auto;
+}
+
+.rail-shadow-intersection{
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    position: absolute;
+}
+
+.particle-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    position: relative;
+}
+
+.particle-container a p {
+    color: white;
+    font-family: 'man';
+    font-size: 50px;
+    text-align: start;
+    z-index: 10;
+}
+
+.left-particle {
+    align-self: flex-start;
+    width: auto; /* Adjust size as needed */
+}
+
+.join-us-bg {
+    align-self: center;
+    width: auto; /* Adjust size as needed */
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.right-particle {
+    align-self: flex-end;
+    width: auto; /* Adjust size as needed */
+}
+
+.wave{
+    position: absolute;
+    margin-bottom: -20%;
+    width: 100%;
+    opacity: 50%;
+    top: 20%;
+}
+
+.about-section{
+    position: relative;
+    z-index: 4;
+    align-items: center;
+    
+}
+
+.about-section p{
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.left-spinny{
+    position: absolute;
+    width: 50%;
+    height: auto;
+    animation: parallax-spin infinite linear;
+    animation-duration: 40s;
+    opacity: 40%;
+    right: -21%;
+    top: 15%;
+}
+
+.competition-category-container {
+    position: relative;
+    margin-top: 5vh;
+    z-index: 10;
+    width: 100%;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 10;
+  }
+
+.competition-category-container h2 {
+    font-family: 'man'; /* Matches the existing styles for h2 */
+    color: white;
+    font-size: 8vh;
+    margin-bottom: 2vh;
+    z-index: 30;
+}
+
+/* .competition-images1 {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    width: 70%;
+    margin: 0 auto;
+    max-width: 80%;
+} */
+
+/* .category-image1 {
+    width: 40%; 
+    max-width: 360px;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease; 
+    z-index: 99;
+} */
+
+.competition-images1 {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .competition-item {
+    position: relative;
+    display: inline-block;
+    width: 40%; /* Adjust width as needed */
+    z-index: 10;
+  }
+  
+  .category-image1 {
+    position: relative;
+    z-index: 2; /* Ensures it's above the GGroup */
+    width: 100%;
+    transition: transform 0.3s ease;
+    z-index: 10;
+  }
+  
+  .g-group {
+    position: absolute;
+    top: 70%; /* Adjust for alignment */
+    left: 34%;
+    z-index: 1; /* Behind the main image */
+    width: 100%; /* Ensure it starts at container's full width */
+    transform: scale(3.0); /* Scale 1.5x larger */
+    transform-origin: center; /* Keep scaling centered */
+    opacity: 0.5; /* Hologram effect */
+    pointer-events: none; /* Prevent hover interaction */
+  }
+  
+
+.competition-images1 .category-image1:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease; 
+    z-index: 15;
+}
+
+.competition-boxes-container {
+    display: flex; 
+    justify-content: space-around; 
+    gap: 3%; 
+    margin-top: 10vh; 
+    width: 80%; 
+    margin-left: 6%; 
+    margin-right: 10%;
+    z-index: 10;
+}
+  
+.category-boxes {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    gap: 1vh; 
+    z-index: 10;
+}
+  
+.placeholder-boxes {
+    display: flex;
+    flex-direction: column; 
+    gap: 2.5vh; 
+    z-index: 10;
+}
+
+.Panel-Container{
+    background-color: transparent;
+    z-index: 10;
+}
+  
+.placeholder-box {
+    width: 300px; 
+    height: 150px;
+    z-index: 10;
+    /* background-color: gray;  */
+    border-radius: 10px; 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Bruno mars';
+    color: white;
+    font-size: 21px;
+    font-weight: 1;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+  .placeholder-box img {
+    width: 75px; 
+    height: 75px; 
+    margin-bottom: 8px; 
+    z-index: 10;
+  }
+
+.s-box{
+    background: linear-gradient(to bottom, #EE227D, #580151); 
+    z-index: 10;
+}
+.e-box{
+    background: linear-gradient(to bottom, #26E5D3, #13485A); 
+    z-index: 10;
+}
+.a-box{
+    background: linear-gradient(to bottom, #FBBC9A, #811624); 
+    z-index: 10;
+}
+.l-box{
+    background: linear-gradient(to bottom, #C5DB5B, #2D460A); 
+    z-index: 10;
+}
+  
+.placeholder-box:hover {
+    transform: scale(1.1); /* Zoom not working idk */
+    z-index: 15;
+}
+
+  
+
+@keyframes parallax-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.buttonJoin{
+    background-image: url('../assets/buttonBG.png');
+    background-clip:content-box;
+    background-size:cover;
+    background-position: 60%;
+    background-repeat: no-repeat;
+    width: 450px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#contentAbout{
+    font-family: 'Bruno';
+}
+
+.bwave-bg1{
+    position: absolute;
+    opacity: 20%;
+    left: -00%;
+    top: 20%;
+    z-index: 2;
+}
+
+.bsphere-bg1{
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    z-index: 0;
+    left: 21%;
+}
+
+.hologram-bg{
+    position: absolute;
+    margin-top: -30%;
+}
+
+.trailer-section{
+    margin-top: -10%;
+}
+
+.trailer-container {
+    position: relative;
+    width: 70%; /* Edit this if you want to change the size of the trailer*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.trailer-bg{
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hideText{
+    font-family: 'Bruno';
+}
+
+.entation{
+    font-family: 'man';
+}
+
+.trailer-video {
+    display: block;
+    position: absolute;
+    top: 7.5%;
+    left: 5%;
+    width: 90%;
+    height: 85%;
+    z-index: 2; 
+}
+
+.png-outlines .side-by-side {
+    display: flex;
+    gap: 2%;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-bg, .poster-bg {
+    width: 40%; 
+    height: auto; 
+    object-fit: cover; 
+}
+
+@media(max-width:1024px){
+    .png-outlines p{
+        font-size: 14px;
+    }
+
+    .bottomDesc p{
+        height: 390px;
+    }
+}
+
+
+
+@media(max-width:768px){
+    .main-buildings-container {
+        position: relative;
+        width: 100%;
+        padding-bottom: 10vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 50vh;
+    }
+
+    .home{
+        padding-bottom: 15vh;
+    }
+    
+    .main-buildings1 {
+        min-width: 150vw;
+        z-index: 1; /* Keeps it behind other elements */
+        margin-top: 35vh; /* Adjust this value to push all parts down */
+        bottom: -2%;
+    }
+    .central{
+        height: 70vh;
+    }
+    
+    .main-buildings2 {
+        min-width: 150vw;
+        z-index: 2; /* Places it above mainbuildings1 */
+        margin-top: -15vh; /* Slight negative margin to overlap with mainbuildings1 */
+        opacity: 1; /* Optional: Adjust opacity for a layered effect */
+        bottom: -11%;
+    }
+    
+    .main-part-rektor {
+        width: 100%;         /* Controls size */
+        transform:  scale(1.8);; /* Moves it slightly to the left */
+        bottom: -35%;
+        z-index: 3; 
+    }
+
+    
+    
+    .clouds1 {
+        width: 100%;
+        transform: scale(1.25);; /* Moves it slightly to the left */
+        z-index: 3; /* Places it above mainbuildings1 */
+        margin-top: -24vh; /* Slight negative margin to overlap with mainbuildings1 */
+        opacity: 0.9; /* Optional: Adjust opacity for a layered effect */
+        bottom: -17vh;
+    }
+    
+    @font-face {
+        font-family: 'man';
+        src: url('../assets/fonts/batmfa__.ttf');
+    }
+    
+    .floor{
+        width: 100vw;
+        height: 30vh;
+        position: absolute;
+        z-index: 2;
+        bottom: 0vh;
+        background-color: #551a5c00;
+    }
+    
+    .abtbackground{
+        background: rgb(71,0,94);
+        background: linear-gradient(0deg, rgba(71,0,94,1) 0%, rgba(85,26,92,1) 100%);
+        width: 100vw;
+    }
+    
+    .bottomDesc{
+        height: 1200px;
+    
+    }
+    
+    
+    
+    .bottomDesc h2{
+        color: white;
+        font-family: 'man';
+        font-size: 30px;
+    }
+    
+    .bottomDesc p{
+        color: white;
+        font-family: 'man';
+        font-size: 10px;
+        height: auto;
+    }
+    
+    .png-outlines{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 2;
+    }
+    
+    .png-outlines p{
+        font-size: 12px;
+        position: absolute;
+        width: 80%;
+        right: 10%;
+        margin-top: 0;
+        height: 200px;
+    }
+    
+    .bottomDesc br{
+        height: 40px;
+    }
+    
+    .inter-bg{
+        position: absolute;
+        width: 100vw;
+        height: auto;
+        z-index: 1;
+        top: 30%;
+    }
+    
+    .bottom-bg{
+        position: relative;
+        width: auto;
+        min-height: 150vh;
+    
+    }
+    .bottom-city1{
+        position: absolute;
+        z-index: 0;
+        min-width: 150%;
+        height: auto;
+        bottom: -5%;
+        opacity: 20%;
+    }
+    
+    .train{
+        width: 80%;
+        margin-left: 40%;
+        height: auto;
+        margin-top: -20%;
+        bottom: 6%;
+    }
+    
+    .rail{
+        width: 100%;
+        height: auto;
+    }
+    
+    .shadow-intersection{
+        width: 100%;
+        height: auto;
+    }
+    
+    .rail-shadow-intersection{
+        width: 100%;
+        height: auto;
+        margin-top: -30%;
+    }
+    
+    .particle-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .particle-container a p {
+        color: white;
+        font-family: 'man';
+        font-size: 18px;
+    }
+    
+    .left-particle {
+        align-self: flex-start;
+        width: 10vw;
+    }
+    
+    .join-us-bg {
+        align-self: center;
+        width: auto; /* Adjust size as needed */
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .right-particle {
+        align-self: flex-end;
+        width: 10vw; /* Adjust size as needed */
+    }
+    
+    .wave{
+        position: absolute;
+        margin-bottom: -20%;
+        width: 100%;
+        opacity: 50%;
+    }
+    
+    .about-section{
+        align-items: center;
+        margin-top: 15%;
+    }
+    
+    .about-section p{
+        width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .left-spinny{
+        position: absolute;
+        width: 50%;
+        height: auto;
+        animation: parallax-spin infinite linear;
+        animation-duration: 40s;
+        opacity: 40%;
+        right: -21%;
+        top: 15%;
+    }
+    
+    @keyframes parallax-spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    
+    .bsphere-bg{
+        position: absolute;
+    }
+    
+    .bwave-bg{
+        position: absolute;
+        margin-top: -100%;
+        width: 50vw;
+        opacity: 20%;
+        
+    }
+    
+    .hologram-bg{
+        position: absolute;
+        margin-top: -24%;
+    }
+    
+    .trailer-section{
+        margin-top: 15%;
+    }
+
+    .hideText{
+        display: none;
+    }
+    
+    .trailer-container {
+        position: relative;
+        width:80%; /* Edit this if you want to change the size of the trailer*/
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .trailer-bg{
+        display: block;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .trailer-video {
+        display: block;
+        position: absolute;
+        top: 7.5%;
+        left: 5%;
+        width: 90%;
+        height: 85%;
+        z-index: 2; 
+    }
+    
+    .png-outlines .side-by-side {
+        display: flex;
+        flex-direction: column;
+        gap: 10%;
+        height: fit-content;
+
+    }
+    
+    .info-bg, .poster-bg {
+        width: 80%;
+    }
+
+    .info-bg{
+        display: none;
+    }
+
+    .buttonJoin{
+        width: 40vw;
+        height: 50px;
+        margin-top: 60%;
+
+    }
+
+
+}

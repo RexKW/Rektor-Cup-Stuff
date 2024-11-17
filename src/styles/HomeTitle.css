@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'man';
+    src: url('../assets/fonts/batmfa__.ttf');
+}
+
+.home-title-container {
+    position: absolute; /* Fix position */
+    width: 100%;
+    bottom: 80%;
+    text-align: center;
+    z-index: 10; /* Ensure it stays above other content */
+}
+
+.home-title-container p {
+    color: #e42f2f; /* A color that contrasts with the background */
+    font-size: 12vh;
+    font-family: 'man';
+    text-shadow: 0 0 10px hsla(0, 97%, 42%, 0.766)
+}
+.subTitle p{
+    font-size: 30px;
+    margin-top: -2%;
+}
+
+@media(max-width:768px){
+    .home-title-container p {
+        font-size: 40px;
+    }
+    .subTitle p{
+        font-size: 15px;
+    }
+
+    .home-title-container{
+        bottom: 25vh;
+    }
+}
