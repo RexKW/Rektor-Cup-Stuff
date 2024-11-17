@@ -1,5 +1,5 @@
 import  { LegacyRef } from 'react';
-import '../styles/Home.css';
+import '../styles/EscapeRoom.css';
 import HomeParallax from "../components/HomeParallax";
 import HomeTitle from "../components/HomeTitle";
 import mainBuildings1 from '../assets/mainbuildings1.svg';
@@ -102,7 +102,7 @@ const {ref: rightBottom} = useParallax<HTMLImageElement>({
 
 
   return (
-    <div className='home relative'>
+    <div className='escapeRoom relative'>
       {/* Spinny Thingy */}
       <HomeParallax className='H_Parallax' />
       <div className="main-buildings-container relative">
@@ -122,7 +122,9 @@ const {ref: rightBottom} = useParallax<HTMLImageElement>({
       
         <div className='about-section' ref={aboutText as LegacyRef<HTMLDivElement>}>
           <h2>About</h2>
-          <p id='contentAbout'>Step into the darkness at Entation, a horror-themed escape room where fear and suspense await at every turn. As you and your team navigate through chilling settings, solve eerie puzzles, and uncover terrifying secrets, the clock is your only ally. Can you escape before the horrors close in? Only the bravest will make it out alive. Are you ready to face your fears?</p>
+          <p id='contentAbout'>The Unseen Faction akan membawa kalian ke dalam dunia Distopia yang kelam dan penuh kekejaman. Dimana player berperan sebagai “Divergent” yang memiliki kekuatan dari setiap faksi : Abnegation, Amity, Dauntless, Erudite, dan Candor.
+
+Dystopia needs Divergents, Save Your Dystopia World, Divergent!</p>
         </div>
 
         <img src={hologramImage} alt="Hologram" className="left-spinny" />

@@ -16,7 +16,7 @@
     justify-content: flex-start; /* Start items from the top */
     align-items: center;
     position: relative;
-    padding-bottom: 10vh;
+    padding-bottom: 0vh;
     background-color: #000919;
 }
 
@@ -39,10 +39,10 @@
 }
 
 
-.main-buildings-container {
+.main-buildings-containerH {
     position: relative;
     width: 100%;
-    height: 150vh;
+    height: 120vh;
     padding-bottom: 10vh;
     display: flex;
     flex-direction: column;
@@ -118,11 +118,11 @@
     width: 100vw;
 }
 
-.bottomDesc{
+.bottomSection{
     top: 20%;
     min-height: 100vh;
     width: 100vw;
-    max-height: 450vh;
+    max-height: 400vh;
     position: relative;
     background-color: #551A5C;
     background-image: linear-gradient(#551A5C,#42214E, #5A284D);
@@ -130,7 +130,7 @@
 
 
 
-.bottomDesc h2{
+.bottomSection h2{
     color: white;
     font-family: 'man';
     font-size: 10vh;
@@ -140,10 +140,10 @@
     font-family: 'man';
 }
 
-.bottomDesc p{
+.bottomSection p{
     color: white;
     font-size: 4vh;
-    height: 700px;
+    height: 400px;
 }
 
 .png-outlines{
@@ -160,7 +160,7 @@
     margin-top: -5%;
 }
 
-.bottomDesc br{
+.bottomSection br{
     height: 40px;
 }
 
@@ -188,11 +188,11 @@
     opacity: 40%;
 }
 
-.train{
+.trainH{
     width: 80%;
     margin-left: 40%;
     height: auto;
-    bottom: 16.3%;
+    bottom: 14.3%;
     position: absolute;
     z-index: 1;
 }
@@ -258,14 +258,14 @@
     top: 20%;
 }
 
-.about-section{
+.about-sectionH{
     position: relative;
     z-index: 4;
     align-items: center;
     
 }
 
-.about-section p{
+.about-sectionH p{
     width: 60%;
     display: block;
     margin-left: auto;
@@ -285,7 +285,7 @@
 
 .competition-category-container {
     position: relative;
-    margin-top: 5vh;
+    margin-top: 0vh;
     z-index: 10;
     width: 100%;
     text-align: center;
@@ -354,8 +354,8 @@
 }
   
 .placeholder-box {
-    width: 400px; 
-    height: 200px;
+    width: 15vw; 
+    height: 10vw;
     background-color: gray; 
     border-radius: 10px; 
     display: flex;
@@ -420,7 +420,7 @@
     text-align: center;
 }
 
-#contentAbout{
+#contentAboutH{
     font-family: 'Bruno';
 }
 
@@ -499,7 +499,7 @@
         font-size: 14px;
     }
 
-    .bottomDesc p{
+    .bottomSection p{
         height: 390px;
     }
 }
@@ -507,7 +507,7 @@
 
 
 @media(max-width:768px){
-    .main-buildings-container {
+    .main-buildings-containerH {
         position: relative;
         width: 100%;
         padding-bottom: 10vh;
@@ -577,20 +577,20 @@
         width: 100vw;
     }
     
-    .bottomDesc{
+    .bottomSection{
         height: 1200px;
     
     }
     
     
     
-    .bottomDesc h2{
+    .bottomSection h2{
         color: white;
         font-family: 'man';
         font-size: 30px;
     }
     
-    .bottomDesc p{
+    .bottomSection p{
         color: white;
         font-family: 'man';
         font-size: 10px;
@@ -614,7 +614,7 @@
         height: 200px;
     }
     
-    .bottomDesc br{
+    .bottomSection br{
         height: 40px;
     }
     
@@ -702,12 +702,12 @@
         opacity: 50%;
     }
     
-    .about-section{
+    .about-sectionH{
         align-items: center;
         margin-top: 15%;
     }
     
-    .about-section p{
+    .about-sectionH p{
         width: 80%;
         display: block;
         margin-left: auto;
@@ -805,6 +805,38 @@
         margin-top: 60%;
 
     }
+
+    .competition-boxes-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Change to 2 columns */
+        justify-content: center;
+      }
+
+      .placeholder-box {
+        width: 150px; 
+        height: 90px;
+        background-color: gray; 
+        border-radius: 10px; 
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Bruno mars';
+        color: white;
+        font-size: 12px;
+        font-weight: 1;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+    
+      .placeholder-box img {
+        width: 50px; 
+        height: 50px; 
+        margin-bottom: 8px; 
+        z-index: 10;
+      }
+
+
 
 
 }

@@ -4,10 +4,9 @@
     src: url('../assets/fonts/BrunoAce-Regular.ttf'); 
 }
 
-.home {
+.escapeRoom {
     min-height: 100vh; /* Allows the container to grow beyond the viewport */
-    width: 100vw;
-    background-image: url('../assets/mainbackground.svg'); /* Same background as countdown */
+    width: 100vw;/* Same background as countdown */
     background-size: 150vw;
     background-repeat: no-repeat;
     background-position: -2.75vw -30vh;
@@ -17,7 +16,7 @@
     align-items: center;
     position: relative;
     padding-bottom: 10vh;
-    background-color: #000919;
+    background-color: #2A1A4E;
 }
 
 @keyframes slideInFromBottom {
@@ -399,7 +398,7 @@
         height: 50vh;
     }
 
-    .home{
+    .escapeRoom{
         padding-bottom: 15vh;
     }
     

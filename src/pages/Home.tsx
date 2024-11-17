@@ -22,10 +22,10 @@ import Train from '../assets/LP-BG-Bottom-Train.svg';
 import bottomCity from '../assets/LP-BG-Bottom-City.webp';
 import Rail from '../assets/LP-BG-Bottom-Rail.svg';
 import RailShadow from '../assets/LP-BG-Bottom-RailShadowIntersection.svg';
-import EsportsCategory from '../assets/EsportsCategory.png';
-import SportsCategory from '../assets/SportsCategory.png';
-import ArtCategory from '../assets/ArtCategory.png';
-import LearningCategory from '../assets/LearningCategory.png';
+// import EsportsCategory from '../assets/EsportsCategory.png';
+// import SportsCategory from '../assets/SportsCategory.png';
+// import ArtCategory from '../assets/ArtCategory.png';
+// import LearningCategory from '../assets/LearningCategory.png';
 
 import { useParallax } from 'react-scroll-parallax';
 
@@ -118,11 +118,10 @@ const {ref: bottomBuilding} = useParallax<HTMLImageElement>({
     <div className='home relative'>
       {/* Spinny Thingy */}
       <HomeParallax className='H_Parallax' />
-      <div className="main-buildings-container relative">
+      <div className="main-buildings-containerH relative">
         <img src={mainBuildings1} alt="Main Buildings 1"  ref={backBuilding as LegacyRef<HTMLImageElement>}   className="main-buildings1 absolute" />
         <img src={mainBuildings2} alt="Main Buildings 2" ref={middleBuilding as LegacyRef<HTMLImageElement>}  className="main-buildings2 absolute" />
         <div className='central relative' ref={mainRektor as LegacyRef<HTMLImageElement>}>
-          <HomeTitle className='home-title' />
           <img src={mainPartRektor} alt="Main Part Rektor" className="main-part-rektor absolute" />
           <img src={clouds1} alt="Clouds 1" className="clouds1" />
           <div className='floor absolute'></div>
@@ -131,40 +130,38 @@ const {ref: bottomBuilding} = useParallax<HTMLImageElement>({
 
       
       
-      <div className='bottomDesc'>
+      <div className='bottomSection'>
       
-        <div className='about-section' ref={aboutText as LegacyRef<HTMLDivElement>}>
+        <div className='about-sectionH' ref={aboutText as LegacyRef<HTMLDivElement>}>
           <h2>About</h2>
-          <p id='contentAbout'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p id='contentAboutH'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
         
 
         <img src={hologramImage} alt="Hologram" className="left-spinny" />
-        <div className='trailer-section' ref={trailer as LegacyRef<HTMLDivElement>}>
-          <div className="holographic-effect">
+
+
 
           
 
-          <div className="competition-category-container">
-          <h2>Competition Categories</h2>
-            <div className="competition-images">
-            <img src={SportsCategory} alt="Cat 1" className="category-image" />
-            <img src={EsportsCategory} alt="Cat 2" className="category-image" />
-            <img src={ArtCategory} alt="Cat 3" className="category-image" />
-            <img src={LearningCategory} alt="Cat 4" className="category-image" />
-            </div>
-          </div>
-          
-          <div className="Panel-Container">
+          <div className="competition-category-container" ref={trailer as LegacyRef<HTMLDivElement>}>
+            <h2>Competition Categories</h2>
+              <div className="competition-images">
+              {/* <img src={SportsCategory} alt="Cat 1" className="category-image" />
+              <img src={EsportsCategory} alt="Cat 2" className="category-image" />
+              <img src={ArtCategory} alt="Cat 3" className="category-image" />
+              <img src={LearningCategory} alt="Cat 4" className="category-image" /> */}
+              </div>
+              <div className="Panel-Container">
             <CompetitionPanel />
           </div>
 
-          <img src={BlueSphere} alt="blue sphere" className="bsphere-bg" />
-          <img src={BlueWave} alt="blue wave" ref={waveHolo as LegacyRef<HTMLImageElement>} className="bwave-bg" />
-        </div>
-
+          </div>
           
-        </div>
+          
+          {/* <img src={BlueSphere} alt="blue sphere" className="bsphere-bg" /> */}
+          <img src={BlueWave} alt="blue wave" ref={waveHolo as LegacyRef<HTMLImageElement>} className="bwave-bg" />
+
 
         <br></br>
 
@@ -173,9 +170,9 @@ const {ref: bottomBuilding} = useParallax<HTMLImageElement>({
           <img src={Intersection2} alt="Shadow Intersection" className="shadow-intersection" />
           <div className='citySection'>
           <img src={bottomCity} alt="Bottom City" ref={bottomBuilding as LegacyRef<HTMLImageElement>} className="bottom-city" />
-              <img src={Train} alt="Train" ref={train as LegacyRef<HTMLImageElement>} className="train" />
+              <img src={Train} alt="Train" ref={train as LegacyRef<HTMLImageElement>} className="trainH" />
               <img src={Rail} alt="Rail" ref={railWay as LegacyRef<HTMLImageElement>} className="rail" />
-            <img src={RailShadow} alt="Rail Shadow Intersection" className="rail-shadow-intersection" />
+              <img src={RailShadow} alt="Rail Shadow Intersection" className="rail-shadow-intersection" />
           </div>
         </div>
       </div>

@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import Countdown from './pages/Countdown';
 import 'flowbite/dist/flowbite.css';
 import { ParallaxProvider } from 'react-scroll-parallax';
+import EscapeRoom from './pages/EscapeRoom';
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/countdown" element={<Countdown />} />
+          <Route path="/escaperoom" element={<EscapeRoom />} />
           {/* <Route path="/about" element={<About />} />
           <Route path="/rules" element={<Rules />} />
           <Route path="/schedule" element={<Schedule />} /> */}
