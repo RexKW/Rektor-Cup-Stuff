@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'man';
+    src: url('../assets/fonts/batmfa__.ttf');
+}
+
+@font-face {
+    font-family: 'Bruno';
+    src: url('../assets/fonts/BrunoAce-Regular.ttf'); 
+}
+
+.batman{
+    font-family: 'man';
+}
+
+.bodyText{
+    font-family: 'Bruno';
+}
+
+.gradientTransition{
+    background-image: linear-gradient(0deg, #000919 25%, rgba(0, 47, 127, 0.00) 100%);
+    width: 100vw;
+    height: 50vh;
+    position: absolute;
+    z-index: 5;
+    bottom: -5%;
+    left: 0;
+}
+
+.buttonColor{
+    border-radius: 32px;
+    background: var(--Rektor-Cup-BG, linear-gradient(235deg, rgba(237, 121, 124, 0.00) 71.35%, rgba(205, 97, 100, 0.16) 117.34%, rgba(199, 93, 95, 0.26) 132.16%), linear-gradient(236deg, rgba(237, 121, 124, 0.00) 48.05%, rgba(205, 97, 100, 0.63) 114.52%, #C75D5F 138.35%), linear-gradient(64deg, rgba(115, 26, 61, 0.00) 32.16%, rgba(115, 26, 61, 0.41) 100.71%, rgba(115, 26, 61, 0.50) 138.8%), linear-gradient(73deg, #ED797C -47.06%, #1E4E5E 18.07%, #02485A 42.22%, #02485A 61.72%, rgba(92, 58, 103, 0.85) 99.05%, rgba(238, 34, 125, 0.60) 108.61%, #752C36 119.45%), #000);
+}
+
+.custom-scroll::-webkit-scrollbar {
+    display: none;  /* Hides the scrollbar in WebKit browsers (Chrome, Safari) */
+}
+
+.custom-scroll {
+    -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+    scrollbar-width: none;      /* For Firefox */
+}
+
+.slick-slide {
+    margin: 0 27px;
+}
+
+/* the parent */
+.slick-list {
+    margin: 0 100px;
+}
+
+  
+
+
+@media(max-width:1024px) and (orientation:portrait){
+
+    .sponsorHeader{
+        background-Image:  url(${bg}); 
+        background-Size: 'cover';
+        background-position: 50% 70%;
+    }
+}

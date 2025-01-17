@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Navbar.css';
-import logo from '../assets/RektorLogo.png';
+// import logo from '../assets/RektorLogo.png';
 import scouncil from '../assets/logo-S-sc-2-219x300-1 (1).png';
-import emblemuc from '../assets/Emblem UC Surabaya-min.png'; 
+// import emblemuc from '../assets/Emblem UC Surabaya-min.png'; 
 import ReorderIcon from '@mui/icons-material/Reorder';
 
 const Navbar: React.FC = () => {
@@ -25,14 +25,13 @@ const Navbar: React.FC = () => {
           <Link to="/" onClick={closeNav} className='py-4'>Home</Link>
           <Link to="/escaperoom" onClick={closeNav} className='py-4'>Escape Room</Link>
           <Link to="/countdown" onClick={closeNav} className='py-4'>Countdown</Link>
+          <Link to="/sponsor" onClick={closeNav} className='py-4'>Sponsor</Link>
         </div>
 
       {/* Logo */}
       
       <div className='navbar-left left-1 absolute'>
-        <img src={emblemuc} className='logo' alt='Emblem UC Logo' />
-        <img src={scouncil} className='logo' alt='Student Council Logo' /> {/* Add new logo */}
-        <img src={logo} className='logo' alt='Logo' /> {/* Add new logo */}
+        <img src={scouncil} className='logo' id='logo1' alt='Student Council Logo' /> {/* Add new logo */}
       </div>
 
       {/* Navigation Links */}
@@ -41,6 +40,7 @@ const Navbar: React.FC = () => {
           <Link to="/" onClick={closeNav}>Home</Link>
           <Link to="/escaperoom" onClick={closeNav} >Escape Room</Link>
           <Link to="/countdown" onClick={closeNav} >Countdown</Link>
+          <Link to="/sponsor" onClick={closeNav}>Sponsor</Link>
         </div>
         <button onClick={toggleNav} id="burger" className='burger mb-2 mr-1'>
           <ReorderIcon />

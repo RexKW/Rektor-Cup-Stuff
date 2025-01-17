@@ -3,23 +3,53 @@
     src: url('../assets/fonts/batmfa__.ttf');
 }
 
+@keyframes fade-in{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 100;
+    }
+}
+
 .home-title-container {
     position: absolute; /* Fix position */
     width: 100%;
     bottom: 80%;
     text-align: center;
     z-index: 10; /* Ensure it stays above other content */
+    animation: fade-in 1s ease-in;
 }
 
 .home-title-container p {
-    color: #e42f2f; /* A color that contrasts with the background */
+
+    background: -webkit-linear-gradient( #fc3232, #fb1c1c, #812022 60%, #c71313);
+  -webkit-background-clip: text; 
+     -moz-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent; 
     font-size: 12vh;
     font-family: 'man';
-    text-shadow: 0 0 10px hsla(0, 97%, 42%, 0.766)
+     text-shadow: 0 0 20px rgba(255, 66, 66, 0.059); 
+
 }
 .subTitle p{
     font-size: 30px;
     margin-top: -2%;
+}
+
+@media(max-width:1024px) and (orientation:portrait){
+    .home-title-container{
+        bottom: 60%;
+    }
+
+    .home-title-container p {
+        font-size: 96px;
+    }
+    .subTitle p{
+        font-size: 30px;
+    }
 }
 
 @media(max-width:768px){

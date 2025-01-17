@@ -9,7 +9,7 @@
     display: flex;
     align-items: center; 
     justify-content: space-between;
-    height: 10vh;
+    height: 12vh;
     position: fixed;
     width: 100%;
     padding: 0 0%;
@@ -31,6 +31,14 @@
     height: 9vh;
     object-fit: contain;
     margin-right: 1rem; 
+}
+
+#logo1{
+    height: 7vh;
+}
+
+#logo2{
+    margin-left: -5%;
 }
 
 .navbar-left {
@@ -73,7 +81,7 @@
 .hidden{
     position: absolute;
     background-color: #392843a1;
-    top: 10vh;
+    top: 12vh;
     font-family: 'Bruno Ace SC', sans-serif;
     color: #75eefe;
 }
@@ -90,6 +98,14 @@
         height: 6vh;
         object-fit: contain;
         margin-right: 1rem; 
+    }
+
+    #logo1{
+        height: 5vh;
+    }
+    
+    #logo2{
+        margin-left: -5%;
     }
 
     .navbar-right {

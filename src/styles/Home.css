@@ -50,29 +50,36 @@
     
 }
 
-.main-buildings1 {
+.main-buildings1H {
     width: 100%;
     z-index: 1; /* Keeps it behind other elements */
-    bottom: 10%;
+    bottom: 20%;
     position: absolute;
-
 }
 
-.main-buildings2 {
+.main-buildings2H {
     position: absolute;
     width: 100%;
     z-index: 2; /* Places it above mainbuildings1 */
     opacity: 1; /* Optional: Adjust opacity for a layered effect */
-    bottom: 0;
+    bottom: 8%;
 }
 
-.main-part-rektor {
+@keyframes slide-up{
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+.main-part-rektorH {
     position: absolute;
     width: 100%;          /* Controls size */
     z-index: 3;          /* Ensures layering */
     left: 0%;
     bottom: -10%; /* Adjust this value to push the image further down */
-
 }
 
 .central{
@@ -90,7 +97,7 @@
     margin-top: -24vh; /* Slight negative margin to overlap with mainbuildings1 */
     opacity: 0.9; /* Optional: Adjust opacity for a layered effect */
     position: absolute;
-    bottom: -15vh;
+    bottom: -15%;
 }
 
 @font-face {
@@ -122,7 +129,7 @@
     top: 20%;
     min-height: 100vh;
     width: 100vw;
-    max-height: 400vh;
+    max-height: 345vh;
     position: relative;
     background-color: #551A5C;
     background-image: linear-gradient(#551A5C,#42214E, #5A284D);
@@ -178,30 +185,30 @@
     width: 100vw;
     height: auto;
 }
-.bottom-city{
+.bottom-cityH{
     position: absolute;
     z-index: 0;
-    width: 90%;
+    width: 80%;
     height: auto;
-    bottom: -70%;
-    left: 5%;
-    opacity: 40%;
+    bottom: -10%;
+    left: 10%;
+    opacity: 50%;
 }
 
 .trainH{
     width: 80%;
     margin-left: 40%;
     height: auto;
-    bottom: 14.3%;
+    bottom: 11.8%;
     position: absolute;
     z-index: 1;
 }
 
-.rail{
+.railH{
     width: 100%;
     height: auto;
     position: absolute;
-    bottom: 0;
+    bottom: 0%;
 }
 
 .shadow-intersection{
@@ -209,7 +216,7 @@
     height: auto;
 }
 
-.rail-shadow-intersection{
+.rail-shadow-intersectionH{
     width: 100%;
     height: auto;
     bottom: 0;
@@ -283,14 +290,26 @@
     top: 15%;
 }
 
+.left-spinny2{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    animation: parallax-spin infinite linear;
+    animation-duration: 40s;
+    opacity: 20%;
+    right: -41%;
+    top: 50%;
+}
+
+
 .competition-category-container {
     position: relative;
     margin-top: 0vh;
+    height: 275vh;
     z-index: 10;
     width: 100%;
     text-align: center;
-    margin-right: auto;
-    margin-left: auto;
   }
 
 .competition-category-container h2 {
@@ -327,12 +346,11 @@
 
 .competition-boxes-container {
     display: flex; 
-    justify-content: space-around; 
+    margin: auto;
+    justify-content: center;
     gap: 5%; 
     margin-top: 10vh; 
-    width: 70%; 
-    margin-left: auto; 
-    margin-right: auto; 
+    width: 100%; 
     
 }
   
@@ -351,6 +369,7 @@
 
 .Panel-Container{
     background-color: transparent;
+    
 }
   
 .placeholder-box {
@@ -366,7 +385,6 @@
     color: white;
     font-size: 21px;
     font-weight: 1;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
@@ -377,18 +395,7 @@
     z-index: 10;
   }
 
-.s-box{
-    background: linear-gradient(to bottom, #EE227D, #580151); 
-}
-.e-box{
-    background: linear-gradient(to bottom, #26E5D3, #13485A); 
-}
-.a-box{
-    background: linear-gradient(to bottom, #FBBC9A, #811624); 
-}
-.l-box{
-    background: linear-gradient(to bottom, #C5DB5B, #2D460A); 
-}
+
   
 .placeholder-box:hover {
     transform: scale(1.1); /* Zoom not working idk */
@@ -406,25 +413,14 @@
 
 
 
-.buttonJoin{
-    background-image: url('../assets/buttonBG.png');
-    background-clip:content-box;
-    background-size:cover;
-    background-position: 60%;
-    background-repeat: no-repeat;
-    width: 450px;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
+
 
 #contentAboutH{
     font-family: 'Bruno';
+    font-size: 25px;
 }
 
-.bwave-bg{
+.bwave-bgH{
     position: absolute;
     opacity: 20%;
     left: -00%;
@@ -432,12 +428,29 @@
     z-index: 2;
 }
 
-.bsphere-bg{
+.bwave-bgH2{
+    display: none;
     position: absolute;
+    opacity: 30%;
+    right: -120%;
+    min-width: 200%;
+
     top: 45%;
+    z-index: 1;
+}
+
+.bsphere-bgH{
+    position: absolute;
+    top: 25%;
     width: 100%;
-    z-index: -1;
+    z-index: 1;
+    transform: scaleX(-1);
     left: 21%;
+}
+
+.dots{
+    top: 50%;
+    opacity: 50%;
 }
 
 .hologram-bg{
@@ -445,23 +458,8 @@
     margin-top: -30%;
 }
 
-.trailer-section{
-    margin-top: -10%;
-}
 
-.trailer-container {
-    position: relative;
-    width: 70%; /* Edit this if you want to change the size of the trailer*/
-    margin-left: auto;
-    margin-right: auto;
-}
 
-.trailer-bg{
-    display: block;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 .hideText{
     font-family: 'Bruno';
@@ -471,15 +469,6 @@
     font-family: 'man';
 }
 
-.trailer-video {
-    display: block;
-    position: absolute;
-    top: 7.5%;
-    left: 5%;
-    width: 90%;
-    height: 85%;
-    z-index: 2; 
-}
 
 .png-outlines .side-by-side {
     display: flex;
@@ -494,7 +483,18 @@
     object-fit: cover; 
 }
 
-@media(max-width:1024px){
+@media(max-width:1367px) and (orientation:landscape){
+    .main-buildings-containerH{
+        height: 80vh;
+    }
+
+
+    .bottomSection{
+        height: 250vh;
+    }
+
+
+    
     .png-outlines p{
         font-size: 14px;
     }
@@ -502,11 +502,207 @@
     .bottomSection p{
         height: 390px;
     }
+
+    .competition-category-container{
+        height: 100vh;
+        margin-top: 0%;
+    }
+
+    .competition-category-container h2{
+        font-size: 50px;
+    }
+
+
+
+    
+}
+
+@media(max-width:1180px) and (orientation:landscape){
+    .clouds1{
+        bottom: -10%;
+    }
+}
+
+@media(max-width:1024px)  and (orientation:portrait){
+    .main-buildings-containerH{
+        height: 70vh;
+    }
+
+    .placeholder-box img {
+        width: 50px; 
+        height: 50px; 
+        margin-bottom: 8px; 
+        z-index: 10;
+      }
+
+      .placeholder-box{
+        font-size: 14px;
+      }
+
+    .bottomSection{
+        height: 160vh;
+    }
+
+    
+    .png-outlines p{
+        font-size: 14px;
+    }
+
+    .bottomSection p{
+        height: 390px;
+    }
+
+    .competition-category-container{
+        height: 100vh;
+        margin-top: 5%;
+    }
+
+    .competition-category-container h2{
+        font-size: 50px;
+    }
+
+    .main-part-rektorH {
+        width: 100%;         /* Controls size */
+        transform:  scale(1.8);; /* Moves it slightly to the left */
+        bottom: 0%;
+        z-index: 3; 
+    }
+
+    .clouds1{
+        bottom: -10%;
+    }
+
+
+
+    
+}
+
+@media(max-width:1024px) and (orientation: landscape) {
+    .main-buildings-containerH{
+        height: 80vh;
+    }
+
+    .placeholder-box img {
+        width: 50px; 
+        height: 50px; 
+        margin-bottom: 8px; 
+        z-index: 10;
+      }
+
+      .placeholder-box{
+        font-size: 14px;
+      }
+
+    .bottomSection{
+        height: 250vh;
+    }
+
+    
+    .png-outlines p{
+        font-size: 14px;
+    }
+
+    .bottomSection p{
+        height: 390px;
+    }
+
+    .competition-category-container{
+        height: 150vh;
+        margin-top: 5%;
+    }
+
+    .competition-category-container h2{
+        font-size: 50px;
+    }
+
+
+
+    
+}
+
+@media(max-width:1180px) and (orientation:landscape){
+    .competition-category-container{
+        height: 200vh;
+    }
+}
+
+@media(max-width:820px) and (orientation:portrait){
+    .main-buildings-containerH{
+        height: 60vh;
+    }
+
+    .main-part-rektorH {
+        width: 100%;         /* Controls size */
+        transform:  scale(1.4);; /* Moves it slightly to the left */
+        bottom: 0%;
+        z-index: 3; 
+    }
+
+    .clouds1{
+        bottom: 10%;
+    }
 }
 
 
 
-@media(max-width:768px){
+
+
+@media(max-width:768px) and (max-height:1024px){
+    .main-part-rektorH{
+        width: 100%;         /* Controls size */
+        transform:  scale(2.1);; /* Moves it slightly to the left */
+        bottom: -5%;
+        z-index: 3; 
+    }
+
+    
+
+    .main-buildings1H {
+        min-width: 150vw;
+        z-index: 1; /* Keeps it behind other elements */
+        margin-top: 35vh; /* Adjust this value to push all parts down */
+        bottom: -2%;
+    }
+
+    .placeholder-box{
+        font-size: 10px;
+      }
+
+    .bottomSection{
+        height: 200vh;
+    }
+
+    
+    .main-buildings2H {
+        min-width: 150vw;
+        z-index: 2; /* Places it above mainbuildings1 */
+        margin-top: -15vh; /* Slight negative margin to overlap with mainbuildings1 */
+        opacity: 1; /* Optional: Adjust opacity for a layered effect */
+        bottom: -5%;
+    }
+
+    .competition-category-container{
+        height: 120vh;
+        margin-top: 15%;
+    }
+
+    .categoryIcons{
+        max-width: 30vw;
+    }
+
+    .Panel-Container{
+        margin-top: 0%;
+    }
+
+    .competition-boxes-container {
+        display: flex;
+    }
+
+}
+
+
+
+@media(max-width:768px) and (max-height:950px){
     .main-buildings-containerH {
         position: relative;
         width: 100%;
@@ -514,14 +710,16 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 50vh;
+        height: 40vh;
     }
 
-    .home{
-        padding-bottom: 15vh;
+    #contentAboutH{
+        font-family: 'Bruno';
+        font-size: 14px;
     }
+
     
-    .main-buildings1 {
+    .main-buildings1H {
         min-width: 150vw;
         z-index: 1; /* Keeps it behind other elements */
         margin-top: 35vh; /* Adjust this value to push all parts down */
@@ -531,7 +729,7 @@
         height: 70vh;
     }
     
-    .main-buildings2 {
+    .main-buildings2H {
         min-width: 150vw;
         z-index: 2; /* Places it above mainbuildings1 */
         margin-top: -15vh; /* Slight negative margin to overlap with mainbuildings1 */
@@ -539,9 +737,9 @@
         bottom: -11%;
     }
     
-    .main-part-rektor {
+    .main-part-rektorH {
         width: 100%;         /* Controls size */
-        transform:  scale(1.8);; /* Moves it slightly to the left */
+        transform:  scale(2.1);; /* Moves it slightly to the left */
         bottom: -35%;
         z-index: 3; 
     }
@@ -578,7 +776,7 @@
     }
     
     .bottomSection{
-        height: 1200px;
+        height: 2000px;
     
     }
     
@@ -632,34 +830,35 @@
         min-height: 150vh;
     
     }
-    .bottom-city{
+    .bottom-cityH{
         position: absolute;
         z-index: 0;
-        min-width: 150%;
+        min-width: 200%;
         height: auto;
         bottom: -5%;
+        left: -5%;
         opacity: 20%;
     }
     
-    .train{
+    .trainH{
         width: 80%;
         margin-left: 40%;
         height: auto;
         margin-top: -20%;
-        bottom: 6%;
+        bottom: 3.5%;
     }
     
-    .rail{
+    .railH{
         width: 100%;
         height: auto;
     }
     
-    .shadow-intersection{
+    .shadow-intersectionH{
         width: 100%;
         height: auto;
     }
     
-    .rail-shadow-intersection{
+    .rail-shadow-intersectionH{
         width: 100%;
         height: auto;
         margin-top: -30%;
@@ -682,6 +881,8 @@
         align-self: flex-start;
         width: 10vw;
     }
+
+    
     
     .join-us-bg {
         align-self: center;
@@ -724,6 +925,10 @@
         right: -21%;
         top: 15%;
     }
+
+    .left-spinny2{
+        display: inline;
+    }
     
     @keyframes parallax-spin {
         0% {
@@ -734,16 +939,22 @@
         }
     }
     
-    .bsphere-bg{
+    .bsphere-bgH{
         position: absolute;
+        top: 50%;
     }
     
-    .bwave-bg{
+    .bwave-bgH{
         position: absolute;
-        margin-top: -100%;
+        top: 25%;
         width: 50vw;
         opacity: 20%;
         
+    }
+
+    .bwave-bgH2{
+        display: inline;
+
     }
     
     .hologram-bg{
@@ -780,7 +991,7 @@
         left: 5%;
         width: 90%;
         height: 85%;
-        z-index: 2; 
+        z-index: 10; 
     }
     
     .png-outlines .side-by-side {
@@ -799,12 +1010,7 @@
         display: none;
     }
 
-    .buttonJoin{
-        width: 40vw;
-        height: 50px;
-        margin-top: 60%;
 
-    }
 
     .competition-boxes-container {
         display: grid;
@@ -812,8 +1018,17 @@
         justify-content: center;
       }
 
+      .competition-category-container{
+        margin-top: 15%;
+      }
+
+      .Panel-Container{
+        background-color: transparent;
+        margin-top: -10%;
+    }
+
       .placeholder-box {
-        width: 150px; 
+        width: 125px; 
         height: 90px;
         background-color: gray; 
         border-radius: 10px; 

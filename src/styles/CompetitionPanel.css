@@ -1,0 +1,16 @@
+.s-box{
+    background: linear-gradient(to bottom, #EE227D, #580151); 
+    box-shadow:0px 4px 10px #ee227e8c;
+}
+.e-box{
+    background: linear-gradient(to bottom, #26E5D3, #13485A); 
+    box-shadow:0px 4px 10px #26e5d275;
+}
+.a-box{
+    background: linear-gradient(to bottom, #FBBC9A, #811624); 
+    box-shadow:0px 4px 10px #fbbc9a7f;
+}
+.l-box{
+    background: linear-gradient(to bottom, #C5DB5B, #2D460A); 
+    box-shadow:0px 4px 10px #c6db5bc7;
+}

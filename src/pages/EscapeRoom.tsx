@@ -104,7 +104,7 @@ const {ref: rightBottom} = useParallax<HTMLImageElement>({
   return (
     <div className='escapeRoom relative'>
       {/* Spinny Thingy */}
-      <HomeParallax className='H_Parallax' />
+      <HomeParallax className='E_Parallax' />
       <div className="main-buildings-container relative">
         <img src={mainBuildings1} alt="Main Buildings 1"  ref={backBuilding as LegacyRef<HTMLImageElement>}   className="main-buildings1 absolute" />
         <img src={mainBuildings2} alt="Main Buildings 2" ref={middleBuilding as LegacyRef<HTMLImageElement>}  className="main-buildings2 absolute" />
@@ -117,9 +117,9 @@ const {ref: rightBottom} = useParallax<HTMLImageElement>({
       </div>
 
 
-      <img src={BlueSphere} alt="blue sphere" className="bsphere-bg" />
+     
       <div className='bottomDesc'>
-      
+      <img src={BlueSphere} alt="blue sphere" className="bsphere-bg" />
         <div className='about-section' ref={aboutText as LegacyRef<HTMLDivElement>}>
           <h2>About</h2>
           <p id='contentAbout'>The Unseen Faction akan membawa kalian ke dalam dunia Distopia yang kelam dan penuh kekejaman. Dimana player berperan sebagai “Divergent” yang memiliki kekuatan dari setiap faksi : Abnegation, Amity, Dauntless, Erudite, dan Candor.
@@ -159,7 +159,7 @@ Dystopia needs Divergents, Save Your Dystopia World, Divergent!</p>
         <div className='png-outlines'>
           <h2>Info</h2>
           <div className="side-by-side">
-            <p className="hideText"><span className='text-xl lg:text-5xl entation text-red-800'>Entation</span><br className='py-5'/><br/>Special Price<br/> (11 Nov - 13 Nov 2024)💸💰<br/>
+            <p id="hideText" className="hideText"><span className='text-xl lg:text-5xl entation text-red-800'>Entation</span><br className='py-5'/><br/>Special Price<br/> (11 Nov - 13 Nov 2024)💸💰<br/>
             Early Bird Price :<br/> Rp 40.000/orang,<br/> Rp 200.000/team<br/><br/>
 
             Normal Price <br/>(14 Nov - 23 Nov 2024)💸💰<br/>
@@ -167,7 +167,8 @@ Dystopia needs Divergents, Save Your Dystopia World, Divergent!</p>
 
             CP Registrasi <br/>Escape Room :<br/> 
             082252477198 / Meishy<br/> 
-            081294064383 / Eugene</p>
+            081294064383 / Eugene
+            </p>
             <img src={InfoText} alt="Info Text" className="info-bg" />
             <img src={Poster} alt="Poster" className="poster-bg" />
           </div>
@@ -182,13 +183,11 @@ Dystopia needs Divergents, Save Your Dystopia World, Divergent!</p>
           </div>
         </div>
       </div>
-      <div className="particle-container relative z-1"> 
+      <div className="particle-containerE relative z-1"> 
           <img src={RightParticle} alt="Left Particle" ref={rightBottom as LegacyRef<HTMLImageElement>} className="left-particle" />
             <p className='what absolute z-7 text-xl md:text-6xl text-white top-[10%] text-center w-screen'>What are you<br/>waiting for?</p>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSd8JsrvdZAiCeZDJqkCX-2xialyxwIlDHJbsEgJy0JGscBHug/viewform">
-            <button className='buttonJoin'>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSd8JsrvdZAiCeZDJqkCX-2xialyxwIlDHJbsEgJy0JGscBHug/viewform" className='buttonJoin z-10'>
             <p>Join Now</p>
-            </button>
           </a>
 
           <img src={LeftParticle} alt="Right Particle" ref={leftBottom as LegacyRef<HTMLImageElement>} className="right-particle" />
