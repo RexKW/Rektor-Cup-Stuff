@@ -106,8 +106,8 @@ const {ref: bottomBuilding} = useParallax<HTMLImageElement>({
 
   return (
     <div className='home relative'>
-      <HomeParallax className='H_Parallax' />
-      <div className="main-buildings-containerH relative">
+      <HomeParallax className='H_Parallax bg-gradient-to-tr  from-[#7D626C] from-10% via-[#02485A] to-[#5C3A67] to-90%' />
+      <div className="main-buildings-containerH relative ">
         <img src={mainBuildings1} alt="Main Buildings 1"  ref={backBuilding as LegacyRef<HTMLImageElement>}   className="main-buildings1H absolute" />
         <img src={mainBuildings2} alt="Main Buildings 2" ref={middleBuilding as LegacyRef<HTMLImageElement>}  className="main-buildings2H absolute" />
         <div className='central relative' ref={mainRektor as LegacyRef<HTMLImageElement>}>

@@ -137,7 +137,7 @@ function Sponsor() {
   return (
     <div className="sponsor relative flex flex-col bg-[#000919] pb-20">
       <div
-        className="sponsorHeader relative z-1 h-[90vh] w-full flex"
+        className="sponsorHeader relative z-1 h-[100vh] w-full flex"
         style={{
           backgroundImage: `url(${bg})`,
           backgroundSize: 'cover',

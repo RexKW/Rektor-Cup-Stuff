@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'man';
+    src: url('../assets/fonts/batmfa__.ttf');
+}
+
+@font-face {
+    font-family: 'bruno mars';
+    src: url('../assets/fonts/BrunoAce-Regular.ttf');
+}
+
+@font-face{
+    font-family: 'digital';
+    src: url('../assets/fonts/DigitalNumbers-Regular.ttf');
+}
+
+.score{
+    font-family: 'digital';
+}
+
+
+.body{
+    font-family: 'bruno mars';
+}
+
+.header{
+    font-family: 'man';
+}
