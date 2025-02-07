@@ -66,9 +66,11 @@ const Navbar: React.FC = () => {
             <Link to="/competitions" onClick={closeNav} className="py-4">
               Competitions
             </Link>
-
             <Link to="/timeline" onClick={closeNav} className="py-4">
               Timeline
+            </Link>
+            <Link to="/rundown" onClick={closeNav} className="py-4">
+              Rundown
             </Link>
           </div>
           <div className="navbar-left left-1 absolute">
@@ -92,6 +94,9 @@ const Navbar: React.FC = () => {
               </Link>
               <Link to="/timeline" onClick={closeNav}>
                 Timeline
+              </Link>
+              <Link to="/rundown" onClick={closeNav}>
+                Rundown
               </Link>
             </div>
             <button onClick={toggleNav} id="burger" className="burger mb-2 mr-1">
