@@ -130,7 +130,7 @@ function UpdateCompetition() {
   return (
     <div className='min-h-screen w-screen relative bg-[#000919]'>
         <div className='flex flex-row absolute z-10 justify-center w-full h-full items-center'>
-        <p
+                <p
                     className='text-white body text-2xl absolute top-5 left-5'
                     onClick={() => navigate(-1)}
                     style={{ cursor: 'pointer' }}

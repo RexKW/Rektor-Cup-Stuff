@@ -12,7 +12,7 @@
     width: 50vw; /* this controls the size, reminder for me */
     margin: 0%;
     height: 65vh;
-    top: 26%;
+    top: 24vh;
     padding: 5%;
     padding-top: 3%;
     overflow: visible; 
@@ -161,8 +161,8 @@
         position: absolute;
         font-family: 'man';
         width: 150%;
-        bottom : 42%;
-        font-size: 3vh;
+        bottom : 45%;
+        font-size: 20px;
     }
 
     .timer{
@@ -176,11 +176,11 @@
 
     .descT small{
         width: 10%;
-        font-size: 1vh;
+        font-size: 8px;
     }
 
     .containerT{
-        padding: 0 1.5vh;
+        padding: 0 1vh;
     }
 
     .containerT p{
@@ -188,14 +188,14 @@
         font-family: 'Bruno Ace SC';
         text-shadow:1px 1px 20px #2ce6ff, 1px 1px 10px #ccc;
         padding-top: -40%;
-        font-size: 3vh;
+        font-size: 24px;
         margin-top: -10px;
     }
 
     .dividerT{
         width: 20%;
         padding-top: 2%;
-        font-size: 3vh;
+        font-size: 24px;
     }
     
 }

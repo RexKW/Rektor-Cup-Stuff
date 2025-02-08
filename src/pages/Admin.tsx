@@ -9,6 +9,7 @@ function Admin() {
   const [basketCompetitions, setBasketCompetitions] = useState<any[]>([]);
   const [soccerCompetitions, setSoccerCompetitions] = useState<any[]>([]);
   const [badmintonCompetitions, setBadmintonCompetitions] = useState<any[]>([]);
+  const [billiardCompetitions,setBilliardCompetitions] = useState<any[]>([]);
   const teamNames = [
     'None',
     'IMT',
@@ -24,48 +25,61 @@ function Admin() {
     'FTP',
     'CB',
     'FIKOM',
-    'FPD'
+    'FDB'
   ]
 
 
   const [soccerSelect, setSoccerSelect] = useState(true);
   const [basketSelect, setBasketSelect] = useState(false);
   const [badmintonSelect, setBadmintonSelect] = useState(false);
+  const [billiardSelect, setBilliardnSelect] = useState(false);
 
-  const selectSoccer = () =>{
+  const selectSoccer = () => {
     setSoccerSelect(true)
     setBasketSelect(false)
     setBadmintonSelect(false)
+    setBilliardnSelect(false)
   }
 
-  const selectBasket = () =>{
+  const selectBasket = () => {
     setSoccerSelect(false)
     setBasketSelect(true)
     setBadmintonSelect(false)
+    setBilliardnSelect(false)
   }
 
-  const selectBadminton = () =>{
+  const selectBadminton = () => {
     setSoccerSelect(false)
     setBasketSelect(false)
+    setBilliardnSelect(false)
     setBadmintonSelect(true)
   }
 
-  useEffect(()=>{
-    const fetchCompetitions = async () =>{
-          const basketBall = await getAllCompetitions("basketball")
-          console.log(basketBall)
-          setBasketCompetitions(basketBall.data)
-          console.log(basketCompetitions)
-          const badminton = await getAllCompetitions("badminton")
-          setBadmintonCompetitions(badminton.data)
-          const soccer = await getAllCompetitions("soccer")
-          setSoccerCompetitions(soccer.data)
-      
-  };
+  const selectBilliard = () => {
+    setSoccerSelect(false)
+    setBasketSelect(false)
+    setBilliardnSelect(true)
+    setBadmintonSelect(false)
+  }
 
 
-  fetchCompetitions()
-  },[])
+  useEffect(() => {
+    const fetchCompetitions = async () => {
+      const basketBall = await getAllCompetitions("basketball")
+      console.log(basketBall)
+      setBasketCompetitions(basketBall.data)
+      console.log(basketCompetitions)
+      const badminton = await getAllCompetitions("badminton")
+      setBadmintonCompetitions(badminton.data)
+      const soccer = await getAllCompetitions("soccer")
+      setSoccerCompetitions(soccer.data)
+      const billiard = await getAllCompetitions("billiard")
+      setBilliardCompetitions(billiard.data)
+    };
+
+
+    fetchCompetitions()
+  }, [])
 
 
 
@@ -75,6 +89,7 @@ function Admin() {
       {soccerSelect && (<p className='header text-3xl text-white mt-5'>Soccer</p>)}
       {basketSelect && (<p className='header text-3xl text-white mt-5'>Basketball</p>)}
       {badmintonSelect && (<p className='header text-3xl text-white mt-5'>Badminton</p>)}
+      {billiardSelect && (<p className='header text-3xl text-white mt-5'>Billiard</p>)}
         <div className='flex w-full flex-col px-5 lg:flex-row gap-5 justify-center mt-5'>
           
           <button onClick={selectSoccer} className='body text-white p-5 rounded-lg bg-gradient-to-t from-[#8B0001] via-[#B12E21] to-[#D65D42] hover:scale-110 transition duration-200'>
@@ -85,6 +100,9 @@ function Admin() {
           </button>
           <button onClick={selectBadminton} className='body text-white p-5 rounded-lg bg-gradient-to-t from-[#00224A] via-[#02386E] to-[#0052A2] hover:scale-110 transition duration-200'>
             <p>Badminton</p>
+          </button>
+          <button onClick={selectBilliard} className='body items-center justify-center gap-5 flex text-white p-5 rounded-lg bg-gradient-to-t  from-[#2D460A] via-[#879033] to-[#C5DB5B] hover:scale-110 transition duration-200'>
+            <p>Billiard</p>
           </button>
         </div>  
         <div className='flex flex-col gap-5 w-full mt-5 px-5'>
@@ -210,6 +228,54 @@ function Admin() {
       ) : (
         <div className='bg-[#487F99]/60 backdrop-blur-sm border-white border-2 p-5 rounded-lg flex justify-center items-center'>
           <p className='text-white text-3xl header '>No badminton competitions available</p>
+        </div>
+        
+      )}
+    </>
+  )}
+
+{billiardSelect && (
+    <>
+      {billiardCompetitions?.length > 0 ? (
+        billiardCompetitions.map((competition) => (
+          <Link
+              to={`/admin/updateCompetition/${competition.id}`}
+              key={competition.id}
+              className="bg-[#487F99]/60 backdrop-blur-sm border-white border-2 p-5 rounded-lg flex justify-center items-center"
+            >
+              <div className='flex flex-row gap-5 w-full items-center justify-center'>
+              <div
+                className={`basis-[20%] text-xs lg:text-base text-white body p-2 rounded-lg ${
+                  competition.status === 'Upcoming'
+                    ? 'bg-blue-500'
+                    : competition.status === 'Done'
+                    ? 'bg-green-500'
+                    : competition.status === 'Ongoing'
+                    ? 'bg-yellow-500'
+                    : 'bg-gray-500'
+                }`}
+              >
+                {competition.status}
+              </div>
+                
+                <p className='basis-[15%] text-xs lg:text-base text-white body'>{teamNames[competition.team_1_id]}</p>
+                <p className='basis-[10%] text-xs lg:text-base text-white body'>{competition.team_score_1}</p>
+                <p className='text-white body'>VS</p>
+                <p className='basis-[10%] text-xs lg:text-base text-white body'>{competition.team_score_2}</p>
+                <p className='basis-[15%] text-xs lg:text-base text-white body'>{teamNames[competition.team_2_id]}</p>
+                <p className='basis-[20%] text-xs lg:text-base text-white body'>{competition.name}</p>
+              </div>
+              
+            
+          </Link>
+          
+          
+
+          
+        ))
+      ) : (
+        <div className='bg-[#487F99]/60 backdrop-blur-sm border-white border-2 p-5 rounded-lg flex justify-center items-center'>
+          <p className='text-white text-3xl header '>No billiard competitions available</p>
         </div>
         
       )}

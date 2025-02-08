@@ -9,14 +9,14 @@
     position: absolute;
     width: 100%;
     right: 25%;
-    top : 15%;
+    top : 20%;
 }
 
 .title-container p{
-    color: #2fabe4; /* A color that contrasts with the background */
+    color: #F0F0F0; /* A color that contrasts with the background */
     text-shadow: 0 0 10px hsla(188, 97%, 42%, 0.766);
     width: 150%;
-    font-size: 15vh;
+    font-size: 64px;
     font-family: 'man';
 }
 
@@ -24,8 +24,8 @@
 @media(max-width: 600px) {
     .title-container p{
         width: 150%;
-        margin-top: 50%;
-        font-size: 4.5vh;
+        margin-top: 25vh;
+        font-size: 30px;
         font-family: 'man';
     }
     

@@ -25,8 +25,8 @@ const Countdown: React.FC = () => {
       </div>
       <img src={dots} alt="" className='w-[30vw] h-[30vw] absolute top-0 left-0 rotate-180'/>
       <img src={dots} alt="" className='w-[30vw] h-[30vw] absolute top-0 right-0 rotate-[-90deg]'/>
-      <img src={Floor} alt="" className='absolute bottom-[-15%] w-screen z-1'/>
-      <img src={BG} alt="" className='w-screen h-screen absolute z-0 opacity-50'/>
+      <img src={Floor} alt="" className='absolute bottom-[-15%] w-screen z-[3]'/>
+      <img src={BG} alt="" className='w-screen h-screen absolute z-[0] opacity-50'/>
       <svg xmlns="http://www.w3.org/2000/svg" width="" height="" className='h-screen blur-[0px] absolute top-0 left-0 z-0' viewBox="0 0 1440 1024" fill="none" >
           <g filter="url(#filter0_f_783_470)">
             <path d="M545 141C545 716.481 263.163 1183 -84.5 1183C-432.163 1183 -714 716.481 -714 141C-714 -434.481 -432.163 -901 -84.5 -901C263.163 -901 545 -434.481 545 141Z" fill="#04385E" />

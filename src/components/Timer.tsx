@@ -20,7 +20,7 @@ const Timer: React.FC<{ className?: string }> = ({ className }) => {
   const timerRef = useRef<HTMLDivElement | null>(null);
 
   const startTimer = () => {
-    const targetDate = new Date('February 3, 2025 18:00:00').getTime();
+    const targetDate = new Date('February 10, 2025 18:00:00').getTime();
 
     intervalRef.current = setInterval(() => {
       const now = new Date().getTime();

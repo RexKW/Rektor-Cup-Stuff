@@ -13,6 +13,20 @@
     src: url('../assets/fonts/DigitalNumbers-Regular.ttf');
 }
 
+@keyframes parallax-spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+  .parallax-image{
+    animation: parallax-spin infinite 50s linear;
+  }
+
 .score{
     font-family: 'digital';
 }

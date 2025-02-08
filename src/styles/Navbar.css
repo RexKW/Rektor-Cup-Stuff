@@ -87,10 +87,10 @@
 }
 
 /* Show burger menu button only on smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 860px) {
     .burger {
         display: block;
-        transform: scale(1.5);
+        transform: scale(3);
     }
 
     .logo {
@@ -124,6 +124,12 @@
     }
 
 
+}
+
+@media(max-width: 768px){
+    .burger{
+        transform: scale(1.8);
+    }
 }
 
 /* Keyframes for animation */

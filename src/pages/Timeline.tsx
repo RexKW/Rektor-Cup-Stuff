@@ -5,13 +5,17 @@ import cityBack from '../assets/backCity.png'
 import train from '../assets/train.svg'
 import mascot from '../assets/MascotWing.png'
 import DayCard from '../components/dayCard'
-import { useRef } from 'react';
+import { useRef,  useEffect } from 'react';
 import gsap from "gsap"
-import { useEffect } from 'react'
+import { useIntersection } from 'react-use';
 import HologramSpin from '../assets/Hologram spin full.svg';
 import TimelineBG from '../assets/TimelineBG.png'
 import TimelineBottomBG from '../assets/TimelineBottomBG.png'
 import BGFinal from "../assets/BGStripe.png"
+import BarBG from "../assets/BarBG.svg"
+import Shapes from "../assets/SquareTriangle.svg"
+import BlueDots from '../assets/BlueDots.svg'
+import PinkDots from '../assets/PinkDots.svg'
 
 
 function Timeline() {
@@ -19,16 +23,50 @@ function Timeline() {
     const trainRef = useRef(null);
     const cloudRef = useRef(null);
     const mascotRef = useRef(null);
+    const sectionRef = useRef(null);
+
+
+  const intersection= useIntersection(sectionRef, {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.01
+  });
+
+  const fadeIn = (selector: string | HTMLElement) =>{
+    gsap.to(selector,1,{
+      opacity: 1,
+      y: 0,
+      ease: "power4.out",
+      stagger: {
+        each: 0.3,
+        from: "start"
+      }
+    })
+  }
+
+  const fadeOut = (selector: string | HTMLElement) =>{
+    gsap.to(selector,1,{
+      opacity: 0,
+      y: -20,
+      ease: "power4.out",
+      stagger: {
+        each: 0.3,
+        from: "start"
+      }
+    })
+  }
+
+  intersection && intersection.intersectionRatio < 0.01 ? fadeOut('.fadeInG'):fadeIn('.fadeInG');
 
     const Timeline = [
-        { date: '3 Maret', name: 'Opening & Band' },
+        { date: '3 Maret', name: 'Opening' },
         { date: '4 Maret', name: 'COC & Badminton' },
         { date: '6 Maret', name: 'Catur & Futsal' },
         { date: '10-11 Maret', name: 'DEBAT & BASKET PUTRA & PUTRI' },
         { date: '13 Maret', name: 'Basket Putri' },
         { date: '14 Maret', name: 'Basket Putra & Dance' },
         { date: '17 Maret', name: 'PUBG' },
-        { date: '18 Maret', name: 'Mobile Legends' },
+        { date: '19 Maret', name: 'Mobile Legends' },
     ]
 
     const TimelineFinal = [
@@ -37,13 +75,14 @@ function Timeline() {
         { date: '12 Maret', name: 'DEBAT & BASKET PUTRA & PUTRI' },
         { date: '18 Maret', name: 'PUBG & Billiard Putri' },
         { date: '20 Maret', name: 'Mobile Legends & Billiard Putra' },
-        { date: '21 Maret', name: 'Closing & Dance' },
+        { date: '21 Maret', name: 'Closing & Band' },
     ]
 
     useEffect(() => {
-        const tl = gsap.timeline({ repeat: -1, defaults: {} });
+        const tl = gsap.timeline({ repeat: -1, defaults: { ease: "power4.out", duration: 1 }  });
         const cl = gsap.timeline({ repeat: -1, defaults: { ease: "power4.out", duration: 1 } });
         const ml = gsap.timeline({ defaults: { ease: "power4.out", duration: 1 } })
+        const tm = gsap.timeline({defaults: { ease: "power4.out", duration: 1, stagger:{each: 0.3, from: "start"} } })
 
         tl.to(trainRef.current, { x: -1500, opacity: 1 }) // Train moves in
             .to(trainRef.current, { x: 2500, opacity: 1, duration: 5 }) // Train moves out
@@ -55,43 +94,50 @@ function Timeline() {
 
         ml.from(mascotRef.current, { y: 250, duration: 0.5, scale: 0.8, ease: "linear" })
             .to(mascotRef.current, { y: 0, duration: 0.5, scale: 1, ease: "linear" })
+
+        tm.from('.fadeInG', {y:-20, opacity: 0, stagger:{ each: 0.3, from: "start"}})
+            .to('.fadeInG', {y:0, opacity: 1, stagger:{ each: 0.3, from: "start"}})
         return () => {
             tl.kill();
             cl.kill();
             ml.kill();
+            tm.kill()
         }
     }, []);
 
 
 
 
+
+
     return (
         <div className='relative'>
-            <div className="h-[40vh] lg:h-screen w-screen relative bg-gradient-to-t justify-center items-center from-[#ED197E] from-0% via-[#3B1A55] via-50% to-[#132B44]">
+            <div className="h-[40vh] lg:h-screen w-screen relative bg-gradient-to-b justify-center items-center from-[#2C186C]  to-[#961854]">
                 <p className='batman text-4xl lg:text-8xl absolute top-20 text-white w-full'>Timeline</p>
                 <div className='absolute bottom-0 z-20 flex flex-col'>
-                    <img src={train} ref={trainRef} alt="" className='w-[60%] move ' />
+                    <img src={train} ref={trainRef} alt="" className='w-[60%] move ' draggable="false"/>
                     <img src={track} alt="" className=' w-screen' />
                 </div>
                 <img src={mascot} ref={mascotRef} alt="" className='absolute z-[15] bottom-[-15%] px-[25%] w-[100%]' />
                 <img src={clouds} ref={cloudRef} className='absolute bottom-[-20%] z-10 w-screen' alt="" />
                 <img src={cityFront} alt="" className='absolute bottom-5 z-10 w-screen' />
-                <img src={cityBack} alt="" className='absolute bottom-5 z-0 w-screen' />
+                <img src={cityBack} alt="" className='absolute bottom-5 z-[2] w-screen' />
+                <img src={HologramSpin} className='absolute w-[30vw] h-[30vw] top-20 left-[-10%] z-[1] opacity-50' alt="" />
+                <img src={HologramSpin} className='absolute w-[30vw] h-[30vw] top-20 right-[-10%] z-[1] opacity-50' alt="" />
+                <img src={BarBG} alt="" className='absolute w-screen bottom-[-25%] z-[0] mix-blend-color-dodge'/>
             </div>
             <div className='h-full w-screen  bg-[#000919] flex justify-center pb-10 z-[100] relative'>
-                <div className='flex flex-col gap-20 justify-center z-[50] relative items-center px-20'>
+                <div ref={sectionRef} className='flex flex-col gap-20 justify-center z-[50] relative items-center px-20'>
                     {Timeline.map((card) => (
-                        <DayCard date={card.date} name={card.name} />
+                        <DayCard date={card.date} name={card.name}/>
                     ))}
-                    <div className=' mt-20'>
-                        <p className='text-6xl text-white batman'>Final</p>
+                    <div className='mt-20 fadeInG flex relative'>
+                        <p className='text-6xl text-white batman z-10'>Final</p>
+                        <img src={Shapes} alt="" className='absolute top-[-100%] z-[1]'/>
                     </div>
                     {TimelineFinal.map((card) => (
                         <DayCard date={card.date} name={card.name} />
                     ))}
-
-
-
                 </div>
                 <div className='h-full w-full absolute'>
                     <svg xmlns="http://www.w3.org/2000/svg" width="1374" height="3085" viewBox="0 0 1374 3085" className='absolute left-0' fill="none">
@@ -132,9 +178,11 @@ function Timeline() {
                     </svg>
                     <img src={HologramSpin} className='absolute w-[20vw] h-[20vw] top-30 left-[5%] opacity-10' alt="" />
                     <img src={HologramSpin} className='absolute w-[40vw] h-[40vw] top-0 right-[-15%] opacity-10' alt="" />
-                    <img src={BGFinal} alt="" className='absolute top-[54%] left-0 w-screen opacity-50 rotate-[-15deg]'/>
+                    <img src={BGFinal} alt="" className='absolute top-[52%] left-0 w-screen opacity-50 rotate-[-15deg]'/>
+                    <img src={BlueDots} className="absolute top-[54%] left-0" />
+                    <img src={PinkDots} className="absolute top-[48%] right-0" />
                     <img src={TimelineBG} alt="" className='opacity-10 absolute left-0  w-screen h-auto' />
-                    <img src={TimelineBottomBG} alt="" className=' absolute left-0 bottom-[-25%] opacity-30 w-full' />
+                    <img src={TimelineBottomBG} alt="" className=' absolute left-0 bottom-0 lg:bottom-[-25%] opacity-30 w-full' />
                 </div>
             </div>
 

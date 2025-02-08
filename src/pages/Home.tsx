@@ -150,7 +150,7 @@ const {ref: bottomBuilding} = useParallax<HTMLImageElement>({
 
 
         <div className='bottom-backgrounds '>
-          <div className='citySection'>
+          <div className='citySection flex flex-col'>
               <img src={bottomCity} alt="Bottom City" ref={bottomBuilding as LegacyRef<HTMLImageElement>} className="bottom-cityH" />
               <img src={Train} alt="Train" ref={train as LegacyRef<HTMLImageElement>} className="trainH" />
               <img src={Rail} alt="Rail" ref={railWay as LegacyRef<HTMLImageElement>} className="railH" />

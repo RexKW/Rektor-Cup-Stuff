@@ -17,6 +17,7 @@ import AddCompetition from './pages/AddCompetition';
 import Competitions from './pages/Competitions'
 import ViewCompetition from './pages/ViewCompetition';
 import Timeline from './pages/Timeline'
+import  Rules from './pages/Rules';
 
 const App = () => {
 
@@ -35,6 +36,7 @@ const App = () => {
           <Route path="/timeline" element={<Timeline/>}/>
           <Route path="/competitions" element={<Competitions/>}/>
           <Route path="/competitions/:id" element={<ViewCompetition/>}/>
+          <Route path ="/rules" element={<Rules/>}/>
           <Route
             path="/admin/*"
             element={

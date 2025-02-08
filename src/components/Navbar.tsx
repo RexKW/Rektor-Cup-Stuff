@@ -50,7 +50,7 @@ const Navbar: React.FC = () => {
   const isAdmin = location.pathname.startsWith('/admin');
 
   return (
-    <div className={`navbar flex relative ${isAdmin ? 'bg-[#487F99]':''}`}>
+    <nav className={`navbar flex relative ${isAdmin ? 'bg-[#487F99]':''}`}>
       {!isAdmin ? (
         <>
           <div className="hidden w-screen" id={openLinks ? 'open' : 'close'}>
@@ -75,7 +75,7 @@ const Navbar: React.FC = () => {
             <img src={scouncil} className="logo" id="logo1" alt="Student Council Logo" /> {/* Add new logo */}
           </div>
 
-          <div className="Front flex absolute bottom-5 right-5">
+          <div className="Front flex absolute bottom-[21%] right-5">
             <div className="navbar-right mr-5 mb-2">
               <Link to="/" onClick={closeNav}>
                 Home
@@ -94,7 +94,7 @@ const Navbar: React.FC = () => {
                 Timeline
               </Link>
             </div>
-            <button onClick={toggleNav} id="burger" className="burger mb-2 mr-1">
+            <button onClick={toggleNav} id="burger" className="burger mb-3 mr-1">
               <ReorderIcon />
             </button>
           </div>
@@ -126,7 +126,7 @@ const Navbar: React.FC = () => {
         </div>
       </>
       )}
-    </div>
+    </nav>
   );
 };
 

@@ -7,7 +7,6 @@ const TimeParallax: React.FC<{ className?: string }> = ({ className }) => {
     <div className={`parallax-container ${className}`}>
       <img src={hologramImage} alt="Hologram" className="parallax-image tp-big" draggable="false"/>
       <img src={hologramImage} alt="Hologram" className="parallax-image tp-med" draggable="false"/>
-      <img src={hologramImage} alt="Hologram" className="parallax-image tp-smol" draggable="false"/>
     </div>
   );
 };

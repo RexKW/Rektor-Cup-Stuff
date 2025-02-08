@@ -24,16 +24,17 @@
   }
 
   .tp-big{
-    width: 40%;
+    width: 20%;
     position: absolute;
-    right : 75%;
+    left : -5%;
+    bottom: 5%;
     animation: parallax-spin infinite 50s linear;
   }
 
   .tp-med{
-    width: 30%;
+    width: 25%;
     position: absolute;
-    bottom : 60%;
+    top : 5%;
     left : 80%;
     animation: parallax-spin infinite 30s linear;
   }
