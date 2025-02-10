@@ -24,7 +24,7 @@
 @media(max-width: 600px) {
     .title-container p{
         width: 150%;
-        margin-top: 25vh;
+        margin-top: 15vh;
         font-size: 30px;
         font-family: 'man';
     }

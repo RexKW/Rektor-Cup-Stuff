@@ -126,7 +126,7 @@ function Timeline() {
                 <img src={HologramSpin} className='absolute w-[30vw] h-[30vw] top-20 right-[-10%] z-[1] opacity-50' alt="" />
                 <img src={BarBG} alt="" className='absolute w-screen bottom-[-25%] z-[0] mix-blend-color-dodge'/>
             </div>
-            <div className='h-full w-screen  bg-[#000919] flex justify-center pb-10 z-[100] relative'>
+            <div className='h-full w-screen  bg-[#000919] flex justify-center pb-10 z-[80] relative'>
                 <div ref={sectionRef} className='flex flex-col gap-20 justify-center z-[50] relative items-center px-20'>
                     {Timeline.map((card) => (
                         <DayCard date={card.date} name={card.name}/>
@@ -176,6 +176,7 @@ function Timeline() {
                             </filter>
                         </defs>
                     </svg>
+                    
                     <img src={HologramSpin} className='absolute w-[20vw] h-[20vw] top-30 left-[5%] opacity-10' alt="" />
                     <img src={HologramSpin} className='absolute w-[40vw] h-[40vw] top-0 right-[-15%] opacity-10' alt="" />
                     <img src={BGFinal} alt="" className='absolute top-[52%] left-0 w-screen opacity-50 rotate-[-15deg]'/>

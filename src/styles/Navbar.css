@@ -82,6 +82,7 @@
     position: absolute;
     background-color: #392843a1;
     top: 12vh;
+    z-index: 90;
     font-family: 'Bruno Ace SC', sans-serif;
     color: #75eefe;
 }
