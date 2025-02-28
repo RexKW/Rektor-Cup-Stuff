@@ -102,8 +102,6 @@ const {ref: bottomBuilding} = useParallax<HTMLImageElement>({
 //   easing:'easeOut'
 // })
 
-
-
   return (
     <div className='home relative'>
       <HomeParallax className='H_Parallax bg-gradient-to-tr  from-[#7D626C] from-10% via-[#02485A] to-[#5C3A67] to-90%' />
