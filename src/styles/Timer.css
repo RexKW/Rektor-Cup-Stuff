@@ -153,6 +153,42 @@
     font-size: 5vh;
 }
 
+@media(max-width:1024px) and (orientation:portrait){
+    .timer{
+        width: 80vw;
+    }
+
+    .containerT p{
+        font-size: 4vh;
+    }
+
+    .containerT{
+        padding: 1vh
+    }
+
+    .descT small{
+        font-size: 2vh;
+    }
+
+    .T_ExtraBits {
+        color: rgb(255, 191, 191);
+        position: absolute;
+        font-family: 'man';
+        bottom: 40%;
+        font-size: 4.5vh;
+    }
+
+}
+
+@media(max-width:1024px) and (orientation: landscape){
+    .descT{
+        font-size: 3vh;
+    }
+
+    .timer{
+        width: 80vw;
+    }
+}
 
 @media(max-width: 600px) {
 
