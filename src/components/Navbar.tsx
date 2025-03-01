@@ -66,9 +66,11 @@ const Navbar: React.FC = () => {
             <Link to="/competitions" onClick={closeNav} className="py-4">
               Competitions
             </Link>
-
             <Link to="/timeline" onClick={closeNav} className="py-4">
               Timeline
+            </Link>
+            <Link to="/rundown" onClick={closeNav} className="py-4">
+              Rundown
             </Link>
             <Link to="/rules" onClick={closeNav} className="py-4">
                 Rules
@@ -95,6 +97,10 @@ const Navbar: React.FC = () => {
               </Link>
               <Link to="/timeline" onClick={closeNav}>
                 Timeline
+              </Link>
+              {/* rundown here */}
+              <Link to="/rundown" onClick={closeNav}>
+                Rundown
               </Link>
               <Link to="/rules" onClick={closeNav}>
                 Rules
