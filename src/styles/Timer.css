@@ -200,6 +200,98 @@
     
 }
 
+@media(max-width: 1100px) and (min-width: 700px) {
+
+    .T_ExtraBits{
+        color: rgb(255, 191, 191);
+        position: absolute;
+        font-family: 'man';
+        width: 150%;
+        bottom : 38%;
+        font-size: 50px;
+    }
+
+    .timer{
+        width: 90%;
+    }
+
+    .timerTilt {
+        width: 150%;
+        margin: 0.4vh;
+    }
+
+    .descT small{
+        width: 10%;
+        font-size: 18px;
+    }
+
+    .containerT{
+        padding: 0 1vh;
+    }
+
+    .containerT p{
+        color: #26E5D3;
+        font-family: 'Bruno Ace SC';
+        text-shadow:1px 1px 20px #2ce6ff, 1px 1px 10px #ccc;
+        padding-top: -40%;
+        font-size: 44px;
+        margin-top: -10px;
+    }
+
+    .dividerT{
+        width: 20%;
+        padding-top: 2%;
+        font-size: 44px;
+    }
+    
+}
+
+@media(max-width: 1100px) and (min-width: 900px) {
+
+    .T_ExtraBits{
+        color: rgb(255, 191, 191);
+        position: absolute;
+        font-family: 'man';
+        width: 150%;
+        bottom : 38%;
+        font-size: 40px;
+    }
+
+    .timer{
+        width: 90%;
+    }
+
+    .timerTilt {
+        width: 150%;
+        margin: 0.4vh;
+    }
+
+    .descT small{
+        width: 10%;
+        font-size: 18px;
+    }
+
+    .containerT{
+        padding: 0 1vh;
+    }
+
+    .containerT p{
+        color: #26E5D3;
+        font-family: 'Bruno Ace SC';
+        text-shadow:1px 1px 20px #2ce6ff, 1px 1px 10px #ccc;
+        padding-top: -40%;
+        font-size: 54px;
+        margin-top: -10px;
+    }
+
+    .dividerT{
+        width: 12%;
+        padding-top: 2%;
+        font-size: 54px;
+    }
+    
+}
+
 
 
 
