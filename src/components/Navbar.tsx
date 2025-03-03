@@ -73,6 +73,9 @@ const Navbar: React.FC = () => {
             <Link to="/rules" onClick={closeNav} className="py-4">
                 Rules
               </Link>
+              <Link to="/rundown" onClick={closeNav} className="py-4">
+                Rundown
+              </Link>
           </div>
           <div className="navbar-left left-1 absolute">
             <img src={scouncil} className="logo" id="logo1" alt="Student Council Logo" /> {/* Add new logo */}
@@ -98,6 +101,9 @@ const Navbar: React.FC = () => {
               </Link>
               <Link to="/rules" onClick={closeNav}>
                 Rules
+              </Link>
+              <Link to="/rundown" onClick={closeNav}>
+                Rundown
               </Link>
             </div>
             <button onClick={toggleNav} id="burger" className="burger mb-3 mr-1">
