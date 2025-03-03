@@ -12,7 +12,7 @@ const events = [
     { date: '19:55 - 20:20', name: 'Penutupan' },
 ];
 
-function Maret5() {
+function Maret5CC() {
   return (
     <div className="flex flex-col gap-4 items-center">
       {events.map((event) => (
@@ -22,4 +22,4 @@ function Maret5() {
   )
 }
 
-export default Maret5
+export default Maret5CC

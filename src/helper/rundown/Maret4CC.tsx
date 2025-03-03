@@ -11,7 +11,7 @@ const events = [
     { date: '19:10 - 19:20', name: 'Penutupan & Pengumuman' },
 ];
 
-function Maret4() {
+function Maret4CC() {
   return (
     <div className="flex flex-col gap-4 items-center">
       {events.map((event) => (
@@ -21,4 +21,4 @@ function Maret4() {
   )
 }
 
-export default Maret4
+export default Maret4CC

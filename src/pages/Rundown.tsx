@@ -13,10 +13,33 @@ import BGFinal from "../assets/BGStripe.png"
 
 // Import the single-page components for each date
 import Maret3 from '../helper/rundown/Maret3';
-import Maret4 from '../helper/rundown/Maret4'
+import Maret4CC from '../helper/rundown/Maret4CC'
 import Maret4Badminton from '../helper/rundown/Maret4Badminton';
-import Maret5 from '../helper/rundown/Maret5';
+import Maret5CC from '../helper/rundown/Maret5CC';
 import Maret5Badminton from '../helper/rundown/Maret5Badminton';
+import Maret6Catur from '../helper/rundown/Maret6Catur';
+import Maret6Futsal from '../helper/rundown/Maret6Futsal';
+import Maret7Catur from '../helper/rundown/Maret7Catur'
+import Maret7Futsal from '../helper/rundown/Maret7Futsal'
+import Maret10Basket from '../helper/rundown/Maret10Basket'
+import Maret10Debate from '../helper/rundown/Maret10Debate'
+import Maret11Basket from '../helper/rundown/Maret11Basket'
+import Maret11Debate from '../helper/rundown/Maret11Debate'
+import Maret12Basket from '../helper/rundown/Maret12Basket'
+import Maret12Debate from '../helper/rundown/Maret12Debate'
+import Maret13Basket from '../helper/rundown/Maret13Basket'
+import Maret14Basket from '../helper/rundown/Maret14Basket'
+import Maret14Dance from '../helper/rundown/Maret14Dance'
+import Maret17PUBG from '../helper/rundown/Maret17PUBG'
+import Maret18Billiard from '../helper/rundown/Maret18Billiard'
+import Maret18PUBG from '../helper/rundown/Maret18PUBG'
+import Maret19Billiard from '../helper/rundown/Maret19Billiard'
+import Maret19ML from '../helper/rundown/Maret19ML'
+import Maret20Billiard from '../helper/rundown/Maret20Billiard'
+import Maret20ML from '../helper/rundown/Maret20ML'
+import Maret21Art from '../helper/rundown/Maret21Art'
+import Maret21Closing from '../helper/rundown/Maret21Closing'
+
 
 function Rundown() {
   const trainRef = useRef<HTMLImageElement>(null);
@@ -24,8 +47,35 @@ function Rundown() {
   const mascotRef = useRef<HTMLImageElement>(null);
   const [selectedDate, setSelectedDate] = useState('Opening'); //default
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-
-  const dates = ['Opening', '4 Maret COC', '4 Maret Badminton', '5 Maret COC', '5 Maret Badminton']; //change names here, either date/name of day
+  const dates = [
+    'Opening',
+    '4 Maret COC',
+    '4 Maret Badminton',
+    '5 Maret COC',
+    '5 Maret Badminton',
+    '6 Maret Catur',
+    '6 Maret Futsal',
+    '7 Maret Catur',
+    '7 Maret Futsal',
+    '10 Maret Basket',
+    '10 Maret Debat',
+    '11 Maret Basket',
+    '11 Maret Debat',
+    '12 Maret Basket',
+    '12 Maret Debat',
+    '13 Maret Basket',
+    '14 Maret Basket',
+    '14 Maret Dance',
+    '17 Maret PUBG',
+    '18 Maret Billiard',
+    '18 Maret PUBG',
+    '19 Maret Billiard',
+    '19 Maret Mobile Legends',
+    '20 Maret Billiard',
+    '20 Maret Mobile Legends',
+    '21 Maret Art',
+    'Closing',
+  ];
 
   useEffect(() => {
     const tl = gsap.timeline({ repeat: -1 });
@@ -62,14 +112,59 @@ function Rundown() {
   if (selectedDate === 'Opening') {
     pageComponent = <Maret3 />;
   } else if (selectedDate === '4 Maret COC') {
-    pageComponent = <Maret4 />;
+    pageComponent = <Maret4CC />;
   } else if (selectedDate === '4 Maret Badminton') {
     pageComponent = <Maret4Badminton />;
   } else if (selectedDate === '5 Maret COC') {
-    pageComponent = <Maret5 />;
+    pageComponent = <Maret5CC />;
   } else if (selectedDate === '5 Maret Badminton') {
     pageComponent = <Maret5Badminton />;
-  } 
+  } else if (selectedDate === '6 Maret Catur') {
+    pageComponent = <Maret6Catur />;
+  } else if (selectedDate === '6 Maret Futsal') {
+    pageComponent = <Maret6Futsal />;
+  } else if (selectedDate === '7 Maret Catur') {
+    pageComponent = <Maret7Catur />;
+  } else if (selectedDate === '7 Maret Futsal') {
+    pageComponent = <Maret7Futsal />;
+  } else if (selectedDate === '10 Maret Basket') {
+    pageComponent = <Maret10Basket />;
+  } else if (selectedDate === '10 Maret Debat') {
+    pageComponent = <Maret10Debate />;
+  } else if (selectedDate === '11 Maret Basket') {
+    pageComponent = <Maret11Basket />;
+  } else if (selectedDate === '11 Maret Debat') {
+    pageComponent = <Maret11Debate />;
+  } else if (selectedDate === '12 Maret Basket') {
+    pageComponent = <Maret12Basket />;
+  } else if (selectedDate === '12 Maret Debat') {
+    pageComponent = <Maret12Debate />;
+  } else if (selectedDate === '13 Maret Basket') {
+    pageComponent = <Maret13Basket />;
+  } else if (selectedDate === '14 Maret Basket') {
+    pageComponent = <Maret14Basket />;
+  } else if (selectedDate === '14 Maret Dance') {
+    pageComponent = <Maret14Dance />;
+  } else if (selectedDate === '17 Maret PUBG') {
+    pageComponent = <Maret17PUBG />;
+  } else if (selectedDate === '18 Maret Billiard') {
+    pageComponent = <Maret18Billiard />;
+  } else if (selectedDate === '18 Maret PUBG') {
+    pageComponent = <Maret18PUBG />;
+  } else if (selectedDate === '19 Maret Billiard') {
+    pageComponent = <Maret19Billiard />;
+  } else if (selectedDate === '19 Maret Mobile Legends') {
+    pageComponent = <Maret19ML />;
+  } else if (selectedDate === '20 Maret Billiard') {
+    pageComponent = <Maret20Billiard />;
+  } else if (selectedDate === '20 Maret Mobile Legends') {
+    pageComponent = <Maret20ML />;
+  } else if (selectedDate === '21 Maret Art') {
+    pageComponent = <Maret21Art />;
+  } else if (selectedDate === 'Closing') {
+    pageComponent = <Maret21Closing />;
+  }
+
 
   return (
     <div className='relative'>
@@ -86,19 +181,30 @@ function Rundown() {
       </div>
       <div className='h-full w-screen bg-[#000919] flex justify-center pb-10 z-[20] relative'>
         {/* Dropdown for date selection */}
+        {/* Dropdown for date selection */}
         <div className="w-full lg:px-20 absolute justify-center flex top-[-25px] z-[60]">
           <div
-            className="relative w-[80vw] w-full lg:w-[60vw] border-4 border-gray-500 py-10 rounded-xl bg-[#11283D] tracking-wide focus:outline-none"
+            className="relative w-[80vw] lg:w-[60vw] border-4 border-gray-500 py-10 rounded-xl bg-[#11283D] tracking-wide focus:outline-none"
             onClick={() => setIsDropdownOpen(!isDropdownOpen)}
           >
             <div className="absolute inset-0 flex justify-center items-center">
               <button className="batman relative w-full justify-center items-center flex text-white text-base lg:text-3xl">
                 {selectedDate}
-                <p className='rotate-[180deg] absolute right-5'>^</p>
+                <p className="rotate-[180deg] absolute right-5">^</p>
               </button>
             </div>
+            
             {isDropdownOpen && (
-              <div className="absolute top-[55%] lg:top-[110%] left-1/2 -translate-x-1/2 w-[90%] lg:w-[100%] xl:w-[60%] 2xl:w-[50%] mt-1 lg:mt-2 bg-[#000919] border border-white/20 rounded-lg shadow-xl z-[70]">
+              <div 
+                className="absolute top-[55%] lg:top-[110%] left-1/2 -translate-x-1/2 w-[90%] lg:w-[100%] xl:w-[60%] 2xl:w-[50%] mt-1 lg:mt-2 bg-[#000919] border border-white/20 rounded-lg shadow-xl z-[70] overflow-y-auto"
+                style={{ maxHeight: '270px' }} // Limit dropdown height (5-6 items)
+                onWheel={(e) => {
+                  e.currentTarget.scrollBy({
+                    top: e.deltaY * 0.5, // Smooth scrolling
+                    behavior: 'smooth'
+                  });
+                }}
+              >
                 {dates.map((date) => (
                   <div
                     key={date}

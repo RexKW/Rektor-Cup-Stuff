@@ -1,31 +1,32 @@
 import DayCard from "../../components/dayCard";
 
 const events = [
-    { date: '19:45 - 20:00', name: 'Registrasi Peserta' },
-    { date: '20:00 - 20:15', name: 'Babak 13 besar 1 (2 meja)BO1 (ISB VS IBM,BMI VS VCD)' },
-    { date: '20:15 - 20:18', name: 'Rotasi pemain ' },
-    { date: '20:18 - 20:33', name: 'Babak 13 besar 2 (2 meja)BO1 (MED VS CBZ,ARS VS COM)' },
-    { date: '20:33 - 20:36', name: 'Rotasi pemain ' },
-    { date: '20:36 - 20:51', name: 'Babak 13 besar 3 (1 meja)BO1 (IMT VS HTEB)' },
-    { date: '20:51 - 20:54', name: 'Rotasi pemain ' },
-    { date: '20:54 - 21:09', name: 'Babak 8 besar 1 (2 meja)BO1 (FTP VS W,W VS W)' },
-    { date: '21:09 - 21:12', name: 'Rotasi pemain ' },
-    { date: '21:12 - 21:27', name: 'Babak 8 besar 2 (2 meja)BO1 (ACC VS W,PSY VS W)' },
-    { date: '21:27 - 21:30', name: 'Rotasi pemain' },
-    { date: '21:30 - 21:45', name: 'Babak semifinal (2 meja)BO1 W VS W)' },
-    { date: '21:45 - 21:48', name: 'Rotasi pemain ' },
-    { date: '21:48 - 21:51', name: 'Penutupan' },
-
+    { date: '17:00 - 17:15', name: 'Registrasi Peserta' },
+    { date: '17:15 - 17:25', name: 'Pembuka dan Pengumuman Aturan' },
+    { date: '17:25 - 17:35', name: 'Persiapan Match & Masuk Room' },
+    { date: '17:35 - 18:00', name: 'Match 1 (Babak 1)' },
+    { date: '18:05 - 18:15', name: 'Pergantian Tim, Persiapan Match & Masuk Room' },
+    { date: '18:15 - 18:40', name: 'Match 2 (Babak 2 & Babak Kekalahan 1)' },
+    { date: '18:40 - 18:50', name: 'Pergantian Tim, Persiapan Match & Masuk Room' },
+    { date: '18:50 - 19:15', name: 'Match 3 (Babak 3 & Babak Kekalahan 2)' },
+    { date: '19:15 - 19:25', name: 'Pergantian Tim, Persiapan Match & Masuk Room' },
+    { date: '19:25 - 19:50', name: 'Match 4 (Babak Kekalahan 3)' },
+    { date: '19:50 - 20:00', name: 'Pergantian Tim, Persiapan Match & Masuk Room' },
+    { date: '20:00 - 20:25', name: 'Match 5 (Babak Kekalahan 4)' },
+    { date: '20:25 - 20:35', name: 'Pergantian Tim, Persiapan Match & Masuk Room' },
+    { date: '20:35 - 21:00', name: 'Match 6 (Babak Kekalahan 5)' },
+    { date: '21:00 - 21:15', name: 'ISHOMA' },
+    { date: '21:15 - 21:25', name: 'Penutupan' },
 ];
 
-function Maret19Billiard() {
+function Maret19ML() {
   return (
     <div className="flex flex-col gap-4 items-center">
       {events.map((event) => (
         <DayCard key={event.date} date={event.date} name={event.name} />
       ))}
     </div>
-  )
+  );
 }
 
-export default Maret19Billiard
+export default Maret19ML;

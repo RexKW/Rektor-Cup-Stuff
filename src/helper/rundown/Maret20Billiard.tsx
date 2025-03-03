@@ -10,7 +10,7 @@ const events = [
 
 ];
 
-function Maret19Billiard() {
+function Maret20Billiard() {
   return (
     <div className="flex flex-col gap-4 items-center">
       {events.map((event) => (
@@ -20,4 +20,4 @@ function Maret19Billiard() {
   )
 }
 
-export default Maret19Billiard
+export default Maret20Billiard
