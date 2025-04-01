@@ -171,13 +171,13 @@ function Rundown() {
       <div className='h-[40vh] lg:h-screen w-screen relative bg-gradient-to-t justify-center items-center from-[#ED197E] from-0% via-[#3B1A55] via-50% to-[#132B44]'>
         <p className='batman text-4xl lg:text-8xl absolute top-20 text-white w-full'>Rundown</p>
         <div className='absolute bottom-0 z-20 flex flex-col'>
-          <img src={train} ref={trainRef} alt="" className='w-[60%] move' />
-          <img src={track} alt="" className='w-screen' />
+          <img src={train} ref={trainRef} alt="" className='w-[60%] move' draggable="false"/>
+          <img src={track} alt="" className='w-screen' draggable="false"/>
         </div>
-        <img src={mascot} ref={mascotRef} alt="" className='absolute z-[15] bottom-[-15%] px-[25%] w-[100%]' />
-        <img src={clouds} ref={cloudRef} className='absolute bottom-[-20%] z-10 w-screen' alt="" />
-        <img src={cityFront} alt="" className='absolute bottom-5 z-10 w-screen' />
-        <img src={cityBack} alt="" className='absolute bottom-5 z-0 w-screen' />
+        <img src={mascot} ref={mascotRef} alt="" className='absolute z-[15] bottom-[-15%] px-[25%] w-[100%]' draggable="false"/>
+        <img src={clouds} ref={cloudRef} className='absolute bottom-[-20%] z-10 w-screen' alt="" draggable="false"/>
+        <img src={cityFront} alt="" className='absolute bottom-5 z-10 w-screen' draggable="false"/>
+        <img src={cityBack} alt="" className='absolute bottom-5 z-0 w-screen' draggable="false"/>
       </div>
       <div className='h-full w-screen bg-[#000919] flex justify-center pb-10 z-[20] relative'>
         {/* Dropdown for date selection */}
@@ -264,11 +264,11 @@ function Rundown() {
               </filter>
             </defs>
           </svg>
-          <img src={HologramSpin} className='absolute w-[20vw] h-[20vw] top-30 left-[5%] opacity-10' alt="" />
-          <img src={HologramSpin} className='absolute w-[40vw] h-[40vw] top-0 right-[-15%] opacity-10' alt="" />
-          <img src={BGFinal} alt="" className='absolute top-[54%] left-0 w-screen opacity-50 rotate-[-15deg]'/>
+          <img src={HologramSpin} className='absolute w-[20vw] h-[20vw] top-30 left-[5%] opacity-10' alt="" draggable="false"/>
+          <img src={HologramSpin} className='absolute w-[40vw] h-[40vw] top-0 right-[-15%] opacity-10' alt="" draggable="false"/>
+          <img src={BGFinal} alt="" className='absolute top-[54%] left-0 w-screen opacity-50 rotate-[-15deg]' draggable="false"/>
           <img src={TimelineBG} alt="" className='opacity-10 absolute left-0 w-screen h-auto' />
-          <img src={TimelineBottomBG} alt="" className='absolute left-0 bottom-[-25%] opacity-30 w-full' />
+          <img src={TimelineBottomBG} alt="" className='absolute left-0 bottom-[-25%] opacity-30 w-full' draggable="false"/>
         </div>
       </div>
     </div>

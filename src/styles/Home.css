@@ -596,7 +596,7 @@
 
 @media(max-width:1024px) and (orientation: landscape) {
     .main-buildings-containerH{
-        height: 80vh;
+        height: 100vh;
     }
 
     .placeholder-box img {
@@ -611,7 +611,7 @@
       }
 
     .bottomSection{
-        height: 250vh;
+        height: 320vh;
     }
 
     

@@ -13,6 +13,7 @@ import Page7 from '../helper/rules/Rektorcup2025/Page7';
 import Page8 from '../helper/rules/Rektorcup2025/Page8';
 import Page9 from '../helper/rules/Rektorcup2025/Page9';
 
+<<<<<<< Updated upstream
 import Page1UC from '../helper/rules/UCChampion/Page1';
 import Page2UC from '../helper/rules/UCChampion/Page2';
 import Page3UC from '../helper/rules/UCChampion/Page3';
@@ -22,6 +23,17 @@ import Page6UC from '../helper/rules/UCChampion/Page6';
 import Page7UC from '../helper/rules/UCChampion/Page7';
 import Page8UC from '../helper/rules/UCChampion/Page8';
 import Page9UC from '../helper/rules/UCChampion/Page9';
+=======
+import Page1U from '../helper/rules/UCChampions/Page1';
+import Page2U from '../helper/rules/UCChampions/Page2';
+import Page3U from '../helper/rules/UCChampions/Page3';
+import Page4U from '../helper/rules/UCChampions/Page4';
+import Page5U from '../helper/rules/UCChampions/Page5';
+import Page6U from '../helper/rules/UCChampions/Page6';
+import Page7U from '../helper/rules/UCChampions/Page7';
+import Page8U from '../helper/rules/UCChampions/Page8';
+import Page9U from '../helper/rules/UCChampions/Page9';
+>>>>>>> Stashed changes
 // import mascot from '../assets/MascotWing.png'
 // import DayCard from '../components/dayCard'
 import { useRef, useState } from 'react';
@@ -170,6 +182,7 @@ function Rules() {
                         </>}
 
                         {pasal == 2 && page==1 && <>
+<<<<<<< Updated upstream
                             <Page1UC/>
                         </>}
                         {pasal == 2 && page==2 && <>
@@ -195,6 +208,33 @@ function Rules() {
                         </>}
                         {pasal == 2 && page==9 && <>
                             <Page9UC/>
+=======
+                            <Page1U/>
+                        </>}
+                        {pasal == 2 && page==2 && <>
+                            <Page2U/>
+                        </>}
+                        {pasal == 2 && page==3 && <>
+                            <Page3U/>
+                        </>}
+                        {pasal == 2 && page==4 && <>
+                            <Page4U/>
+                        </>}
+                        {pasal == 2 && page==5 && <>
+                            <Page5U/>
+                        </>}
+                        {pasal == 2 && page==6 && <>
+                            <Page6U/>
+                        </>}
+                        {pasal == 2 && page==7 && <>
+                            <Page7U/>
+                        </>}
+                        {pasal == 2 && page==8 && <>
+                            <Page8U/>
+                        </>}
+                        {pasal == 2 && page==9 && <>
+                            <Page9U/>
+>>>>>>> Stashed changes
                         </>}
                       </p>
                     </div>
