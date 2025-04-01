@@ -40,7 +40,7 @@ function ViewCompetition() {
         ISB: ISB,
         VCD: VCD,
         PSY: PSY,
-        FIKOM: FIKOM,
+        COM: FIKOM,
         ACC: ACC,
         INA: INA,
         BMI: BMI,
@@ -49,7 +49,7 @@ function ViewCompetition() {
         MED: MED,
         HTB: HTB,
         FTP: FTP,
-        FPD: FPD
+        FDB: FPD
 
     };
 

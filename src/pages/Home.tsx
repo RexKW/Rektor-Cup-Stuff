@@ -132,7 +132,7 @@ const {ref: bottomBuilding} = useParallax<HTMLImageElement>({
           
 
           <div className="competition-category-container" ref={trailer as LegacyRef<HTMLDivElement>}>
-            <h2 className=''>Competition <br className='lg:hidden'/>Re-registration</h2>
+            <h2 className=''>Competition <br className='lg:hidden'/>GuideBook</h2>
               <div className="Panel-Container">
                 <CompetitionPanel />
               </div>

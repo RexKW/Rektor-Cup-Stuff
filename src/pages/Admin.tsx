@@ -85,12 +85,13 @@ function Admin() {
 
   return (
     <div className=' min-h-screen bg-[#000919] adminBG relative'>
-      <div className='absolute mt-10 h-full top-0 flex flex-col items-center z-10 w-full'>
-      {soccerSelect && (<p className='header text-3xl text-white mt-5'>Soccer</p>)}
+      <div className='relative  min-h-screen top-0 flex flex-col items-center z-10 w-full'>
+
+        <div className='flex w-full flex-col px-5 lg:flex-row gap-5 justify-center mt-5'>
+        {soccerSelect && (<p className='header text-3xl text-white mt-5'>Soccer</p>)}
       {basketSelect && (<p className='header text-3xl text-white mt-5'>Basketball</p>)}
       {badmintonSelect && (<p className='header text-3xl text-white mt-5'>Badminton</p>)}
       {billiardSelect && (<p className='header text-3xl text-white mt-5'>Billiard</p>)}
-        <div className='flex w-full flex-col px-5 lg:flex-row gap-5 justify-center mt-5'>
           
           <button onClick={selectSoccer} className='body text-white p-5 rounded-lg bg-gradient-to-t from-[#8B0001] via-[#B12E21] to-[#D65D42] hover:scale-110 transition duration-200'>
             <p>Soccer</p>
@@ -105,7 +106,7 @@ function Admin() {
             <p>Billiard</p>
           </button>
         </div>  
-        <div className='flex flex-col gap-5 w-full mt-5 px-5'>
+        <div className='flex flex-col gap-5 h-full pb-10 w-full mt-5 px-5'>
         {soccerSelect && (
     <>
       {soccerCompetitions?.length > 0 ? (

@@ -19,42 +19,43 @@ import learning from '../assets/LearningCategory.svg'
 import esports from '../assets/EsportsCategory.svg'
 
 
+
 const categories = [
   {
     category: "s-box",
     image: sport,
     items: [
-      { name: "Basketball (L)", img: basketball, link: "https://forms.gle/nVqUyANvx5bGbvQ4A" },
-      { name: "Basketball (P)", img: basketball, link: "https://forms.gle/1BLvpCv7jdSik3a79" },
-      { name: "Futsal", img: futsal, link: "https://forms.gle/6WXYUYVF2rejQCu78" },
-      { name: "Billiard (L)", img: billiard3, link: "https://forms.gle/Yd32EwckJgTRaYUd9" },
-      { name: "Billiard (P)", img: billiard3, link: "https://forms.gle/Tp6Jd5rmU1dZYvV59" },
-      { name: "Badminton", img: badminton, link: "https://forms.gle/GFfCMvAG1MuviEY49" },
+      { name: "Basketball (L)", img: basketball, link: "/Guidebook/Guidebook Rektor Cup 2025 - Basket Putra 5x5.pdf" },
+      { name: "Basketball (P)", img: basketball, link: "/Guidebook/Guidebook Basket 3x3 Putri.pdf" },
+      { name: "Futsal", img: futsal, link: "/Guidebook/Guidebook Futsal Rektor Cup 2025.pdf" },
+      { name: "Billiard (L)", img: billiard3, link: "/Guidebook/Guidebook Rektor Cup 2025 - Billiard Putra.pdf" },
+      { name: "Billiard (P)", img: billiard3, link: "/Guidebook/Guidebook Rektor Cup 2025 - Billiard Putri.pdf" },
+      { name: "Badminton", img: badminton, link: "/Guidebook/Guidebook Badminton Rektor Cup 2025.docx.pdf" },
     ],
   },
   {
     category: "e-box",
     image: esports,
     items: [
-      { name: "Mobile Legends", img: ml, link:"https://forms.gle/qJCMXGbYugRsuLwF9" },
-      { name: "Pubg", img: pubg, link:"https://forms.gle/fZpwGyuT5Pzey4c48" },
+      { name: "Mobile Legends", img: ml, link:"/Guidebook/Guidebook MLBB Rektor Cup 2025.docx.pdf" },
+      { name: "Pubg", img: pubg, link:"/Guidebook/PUBG Guidebook Rektor Cup 2025.docx (1).pdf" },
     ],
   },
   {
     category: "a-box",
     image: art,
     items: [
-      { name: "Dance", img: dance,link:"https://forms.gle/gigYqvUKZqVM1LkS7" },
-      { name: "Band", img: band, link:"https://forms.gle/7hwxaomnz7PUd5nv9" },
+      { name: "Dance", img: dance,link:"/Guidebook/Guidebook Rektor Cup 2025 - Dance.pdf" },
+      { name: "Band", img: band, link:"/Guidebook/Guidebook Rektor Cup 2025 - Band.pdf" },
     ],
   },
   {
     category: "l-box",
     image: learning,
     items: [
-      { name: "CoC", img: coc,link:"https://forms.gle/xAHHLUe7ASEtASWu8" },
-      { name: "Debat", img: debat,link:"https://forms.gle/1Xf2bTU2YYcZckgW7" },
-      { name: "Catur", img: catur,link:"https://forms.gle/UUv1BAy3sKKXXqSJA" },
+      { name: "CoC", img: coc,link:"/Guidebook/Guidebook Rektor Cup 2025 - Cerdas Cermat.pdf" },
+      { name: "Debat", img: debat,link:"/Guidebook/Guidebook Debat rektor cup.pdf" },
+      { name: "Catur", img: catur,link:"/Guidebook/Guidebook Rektor Cup 2025 - Catur.pdf" },
     ],
   },
 ];
@@ -67,7 +68,7 @@ const CompetitionBoxes = () => (
         <div className="placeholder-boxes mt-5">
           {category.items.map((item) => (
 
-            <a href={item.link}>
+            <a href={item.link} download target="_blank" rel="noopener noreferrer">
               <div className={`${category.category} placeholder-box`} key={item.name}>
                 <img src={item.img} alt={item.name} />
                 {item.name}

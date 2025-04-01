@@ -218,11 +218,11 @@ function Sponsor() {
             className="batman border-4 border-[#96D8E4] text-white text-xl mt-5 lg:text-3xl px-20 py-5 buttonColor"
             onClick={() => {
               const fileUrl =
-                '/uploads/PROPOSAL Sponsorship Rektor Cup 2025 Universitas Ciputra.pdf'; // Replace with your actual file path
+                '/uploads/PROPOSAL Sponsorship Rektor Cup 2025 Universitas Ciputra.pdf'; 
               const link = document.createElement('a');
               link.href = fileUrl;
               link.download =
-                'PROPOSAL Sponsorship Rektor Cup 2025 Universitas Ciputra.pdf'; // Name the file as it will appear after download
+                'PROPOSAL Sponsorship Rektor Cup 2025 Universitas Ciputra.pdf'; 
               document.body.appendChild(link);
               link.click();
               document.body.removeChild(link);

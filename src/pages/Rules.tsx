@@ -12,6 +12,16 @@ import Page6 from '../helper/rules/Rektorcup2025/Page6';
 import Page7 from '../helper/rules/Rektorcup2025/Page7';
 import Page8 from '../helper/rules/Rektorcup2025/Page8';
 import Page9 from '../helper/rules/Rektorcup2025/Page9';
+
+import Page1UC from '../helper/rules/UCChampion/Page1';
+import Page2UC from '../helper/rules/UCChampion/Page2';
+import Page3UC from '../helper/rules/UCChampion/Page3';
+import Page4UC from '../helper/rules/UCChampion/Page4';
+import Page5UC from '../helper/rules/UCChampion/Page5';
+import Page6UC from '../helper/rules/UCChampion/Page6';
+import Page7UC from '../helper/rules/UCChampion/Page7';
+import Page8UC from '../helper/rules/UCChampion/Page8';
+import Page9UC from '../helper/rules/UCChampion/Page9';
 // import mascot from '../assets/MascotWing.png'
 // import DayCard from '../components/dayCard'
 import { useRef, useState } from 'react';
@@ -160,115 +170,31 @@ function Rules() {
                         </>}
 
                         {pasal == 2 && page==1 && <>
-                            <p className='text-xl lg:text-4xl px-10' >Peraturan dan Ketentuan </p>
-                            <ol className='text-start space-y-4 text-base lg:text-xl pt-5 pl-10 pr-10 lg:pl-32 lg:pr-32'>
-                                <li>1. Dilarang membawa senjata tajam, contoh: pisau, pedang, belati, golok, celurit, dan lain-lainnya.</li>
-                                <li>2. Dilarang membawa senjata api, contoh: pistol, senapan, shotgun, dan lain-lainnya.</li>
-                                <li>3. Dilarang membawa senjata / mainan yang berbahaya, contoh: airsoft, paintball, tongkat besi, pentung, dan lainnya.</li>
-                                <li>4. Dilarang membawa obat-obatan terlarang, contoh:sabu-sabu, methamphetamine, ganja, dan lain-lainnya.</li>
-                                <li>5. Dilarang merokok / vape / pod di seluruh areaUniversitas Ciputra Surabaya, terutama padatempat pelaksanaan lomba atau lapanganperlombaan.</li>
-                            </ol>
+                            <Page1UC/>
                         </>}
                         {pasal == 2 && page==2 && <>
-                            <p className='text-xl lg:text-4xl px-10' >Peraturan dan Ketentuan </p>
-                            <ol className='text-start space-y-4 text-base lg:text-xl pt-5 pl-10 pr-10 lg:pl-32 lg:pr-32'>
-                                <li>6. Dilarang berkata tidak sopan ataupun melakukan tindakan yang menunjukkan perilaku yang kotor dan tercela, contoh : mengumpat, kata-kata yang vulgar, dan lain-lainnya yang mengganggu perlombaan.</li>
-                                <li>7. Dilarang membawa dan menggunakan minuman beralkohol di sekitar area lomba.</li>
-                                <li>8. Dilarang melakukan tindakan kekerasan seksual disekitar area kampus, baik secara verbal, non fisik, fisik, atau melalui teknologi informasi dan komunikasi.</li>
-                                <li>9. Dilarang melakukan tindakan atau komentar yang akan menimbulkan permasalahan terkait SARA.</li>
-                                <li>10. Dilarang melakukan tindakan provokatif / kekerasan yang akan berkemungkinan menimbulkan konflik dan memicu perkelahian, contoh : meninju peserta / penonton lain, merendahkan peserta / penonton lain, menghina peserta lomba oposisi, dan lain-lainnya.</li>
-                            </ol>
+                            <Page2UC/>
                         </>}
                         {pasal == 2 && page==3 && <>
-                            <p className='text-xl lg:text-4xl px-10' >Peraturan dan Ketentuan </p>
-                            <ol className='text-start space-y-4 text-base lg:text-xl pt-5 pl-10 pr-10 lg:pl-32 lg:pr-32'>
-                                <li>11. Dilarang melakukan tindakan yang akan merugikan peserta / penonton / tim oposisi, contoh: menyinari mata dengan laser, membuang barang ke dalam lapangan, memasuki lapangan tanpa adakepentingan (peserta, wasit, dll), dan lain-lainnya.</li>
-                                <li>12. Dilarang mengotori / merusak lingkungan / tempat pelaksanaan lomba.</li>
-                                <li>13. Peserta dan penonton wajib menggunakan pakaian yang sopan sesuai dengan peraturan kampus, seperti tidak menggunakan baju sleeveless, crop, crocs, celana pendek, dan lain-lain.</li>
-                                <li>14. Peserta / penonton dilarang mengotori maupun merusak fasilitas yang ada. Bila terjadi kerusakan pada fasilitas akibat kelalaian peserta, maka beban penggantian ditanggungkan pada pihak peserta /p enonton yang bersangkutan.</li>
-                                
-                            </ol>
+                            <Page3UC/>
                         </>}
                         {pasal == 2 && page==4 && <>
-                            <p className='text-xl lg:text-4xl px-10' >Peraturan dan Ketentuan </p>
-                            <ol className='text-start space-y-4 text-base lg:text-xl pt-5 pl-10 pr-10 lg:pl-32 lg:pr-32'>
-                                <li>15. Penonton dilarang melempar benda atau mengganggu jalannya pertandingan dengan cara apapun.</li>
-                                <li>16. Peserta dan / atau penonton dilarang membantu peserta yang sedang berlomba atau melakukan tindakan kecurangan dalam bentuk apapun.</li>
-                                <li>17. Penonton diharapkan mendukung dengan sopan, menjaga suasana kompetisi yang sportif, tidak melakukan chant atau melakukan maupun membawa alat-alat sorakan yang menghina tim lawan.</li>
-                                
-                            </ol>
+                            <Page4UC/>
                         </>}
                         {pasal == 2 && page==5 && <>
-                            <p className='text-xl lg:text-4xl px-10' >Tindakan dan Hak</p>
-                            <ol className='text-start space-y-4 text-base lg:text-xl pt-5 pl-10 pr-10 lg:pl-32 lg:pr-32'>
-                                <li>1. Apabila peraturan dilanggar oleh peserta atau penonton, maka panitia akan menegur sebanyakdua kali sesuai dengan tingkat pelanggaran yangtelah dilanggar.</li>
-                                <li>2. Apabila peraturan dilanggar oleh peserta ataupenonton, maka panitia akan mengeluarkan danmemberi tindakan / hukuman sesuai denganperaturan yang telah dilanggar.</li>
-                                <li>3. Segala bentuk tindak kecurangan yang dilakukanpeserta akan langsung didiskualifikasi.</li>
-                                
-                            </ol>
+                            <Page5UC/>
                         </>}
                         {pasal == 2 && page==6 && <>
-                            <p className='text-xl lg:text-4xl px-10' >Tindakan dan Hak</p>
-                            <ol className='text-start space-y-4 text-base lg:text-xl pt-5 pl-10 pr-10 lg:pl-32 lg:pr-32'>
-                                <li>4. Apabila peserta atau penonton membawa barang-barang yang dilarang, maka barang tersebut akan disita oleh panitia dan tidak akan dikembalikan.</li>
-                                <li>5. Apabila peserta atau penonton melakukan tindakan anarkis / perkelahian atau tindakan yang melanggar peraturan, maka akan diberikan tindakan / hukuman sesuai dengan peraturan kampus dan pihak berwenang.</li>
-                                <li>6. Panitia berhak untuk memberhentikan pertandingan jika terjadi konflik / situasi terlalu memanas dikarenakan peserta / penonton lomba yang tidak kondusif.</li>
-                                
-                            </ol>
+                            <Page6UC/>
                         </>}
                         {pasal == 2 && page==7 && <>
-                            <p className='text-xl lg:text-4xl px-10' >Tindakan dan Hak</p>
-                            <ol className='text-start space-y-4 text-base lg:text-xl pt-5 pl-10 pr-10 lg:pl-32 lg:pr-32'>
-                                <li>7. Para penonton diperbolehkan untuk membawa properti ataupun perlengkapan suporter seperti drum selama tidak mengganggu jalannya pertandingan.</li>
-                                <li>8. Diperbolehkan membuat yel-yel selama tidak mengandung unsur provokasi antar tim dan / atau SARA.</li>
-
-                            </ol>
+                            <Page7UC/>
                         </>}
                         {pasal == 2 && page==8 && <>
-                            <p className='text-xl lg:text-4xl px-10' >Sanksi</p>
-                            <ol className='text-start space-y-4 text-base lg:text-xl pt-5 pl-10 pr-10 lg:pl-32 lg:pr-32'>
-                                <li>1. Setiap pelanggaran terhadap peraturan UC Champions 2025 akan dikenai sanksi yang terdiri dari:
-                                    <ol className='ml-10 list-[lower-alpha]'>
-                                        <li>Sanksi Ringan;</li>
-                                        <li>Sanksi Sedang;</li>
-                                        <li>Sanksi Berat.</li>
-                                    </ol>
-                                </li>
-                                <li>2. Sanksi ringan sebagaimana yang dimaksud pada ayat(1) huruf a meliputi:
-                                    <ol className='ml-10 list-[lower-alpha]'>
-                                        <li>Teguran Lisan;</li>
-                                        <li>Pengurangan Kredit Point (KP) bagi mahasiswa/i UC;</li>
-                                        <li>Pernyataan permohonan maaf, pernyataan penyesalan, atau pernyataan sikap; dan dalam bentuk tertulis.</li>
-                                    </ol>
-                                </li>
-                                <li>3. Sanksi sedang sebagaimana yang dimaksud pada ayat(1) huruf b meliputi:
-                                    <ol className='ml-10 list-[lower-alpha]'>
-                                        <li>Sanksi Ringan;</li>
-                                        <li>Denda;</li>
-                                        <li>Mengganti semua kerusakan dan kerugian.</li>
-                                    </ol>
-                                </li>
-
-                            </ol>
+                            <Page8UC/>
                         </>}
                         {pasal == 2 && page==9 && <>
-                            <p className='text-xl lg:text-4xl px-10' >Sanksi</p>
-                            <ol className='text-start space-y-4 text-base lg:text-xl pt-5 pl-10 pr-10 lg:pl-32 lg:pr-32'>
-                                <li>4. Sanksi berat sebagaimana yang dimaksud pada ayat(1) huruf c meliputi:
-                                    <ol className='ml-10 list-[lower-alpha]'>
-                                        <li>Sanksi Sedang;</li>
-                                        <li>Dikeluarkan dari arena pertandingan;</li>
-                                        <li>Di blacklist pada kegiatan Rektor Cup.</li>
-                                    </ol>
-                                </li>
-                                <li>5. Setiap peserta, penonton, dan panitia yang terbuktimelakukan pelanggaran:
-                                    <ol className='ml-10 list-[lower-alpha]'>
-                                        <li>Pasal 1 ayat 5, 6, 9, 13, dan 17 akan dikenakan sanksi ringan sampai dengan sedang;</li>
-                                        <li>Pasal 1 ayat 7, 12, dan 14 akan dikenakan sanksi sedang sampai dengan berat;</li>
-                                        <li>Pasal 1 ayat 1, 2, 3, 4, 8, 10, 11, 15, 16 akan dikenakan sanksi berat.</li>
-                                    </ol>
-                                </li>
-                            </ol>
+                            <Page9UC/>
                         </>}
                       </p>
                     </div>

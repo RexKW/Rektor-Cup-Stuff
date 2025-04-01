@@ -73,14 +73,20 @@ function Competitions() {
     const fetchCompetitions = async () => {
       const basketBall = await getAllCompetitions("basketball")
       console.log(basketBall)
-      setBasketCompetitions(basketBall.data)
+      setBasketCompetitions(basketBall.data.sort())
       console.log(basketCompetitions)
       const badminton = await getAllCompetitions("badminton")
-      setBadmintonCompetitions(badminton.data)
+      setBadmintonCompetitions(badminton.data.sort())
       const soccer = await getAllCompetitions("soccer")
-      setSoccerCompetitions(soccer.data)
+      setSoccerCompetitions(soccer.data.sort())
       const billiard = await getAllCompetitions("billiard")
-      setBilliardCompetitions(billiard.data)
+      setBilliardCompetitions(billiard.data.sort())
+
+      
+      
+      
+      
+
     };
 
 
